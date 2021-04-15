@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="../fichier_CSS/all_page.css">
+    <link rel="stylesheet" href="../fichier_CSS/realisation.css">
+    <link media=" screen and (max-width:1024px)" rel="stylesheet" href="../fichier_CSS/tel_all_page.css"> <!-- version téléphone -->
+    <link media=" screen and (max-width:1024px)" rel="stylesheet" href="../fichier_CSS/tel_realisation.css"> <!-- version téléphone -->
+    <link rel="shortcut icon" href="../image/all_page/cask2.png">
+    <meta charset="utf-8">
+    <title>Dylan GIRAULT</title>
+  </head>
+  <body>
+
+<!-- Barre de navigation -->
+  <header id="ForAll">
+    <div onclick="CloseMenu()"><img id="quit_menu" src="../image/all_page/croix.png" alt="quitter Menu"> </div>
+
+      <a href="../index.html" class="Not_Here" id="Accueil"><img alt="" src="../image/all_page/house.png" id="Logo_1"> Accueil </a>
+      <a href="CV.html" class="Not_Here" id="CV"><img alt="" src="../image/all_page/fichier.png" id="Logo_2"> CV </a>
+      <a href="#" class="Here" id="Réalisation"><img alt="" src="../image/all_page/stick.png" id="Logo_3"> Réalisations </a>
+      <a href="Contact.html" class="Not_Here" id="Contact"><img alt="" src="../image/all_page/mail.png" id="Logo_4"> Contact </a>
+
+    <div id="menu_Tel" onclick="OpenMenu()"><img src="../image/all_page/menu_tel.png"  id="img_menu_Tel" alt="Affiche le Menu">MENU</div>
+  </header>
+
+<!-- Fin de Barre de navigation -->
+
+
+  <div class="Titre">
+    RÉALISATIONS
+  </div>
+
+  <div class="ALL">
+
+    <div class="all_point" >
+      <a class="point" href="#top" onclick="Go_Slide(1)">Blocus</a>
+      <a class="point" href="#top"  onclick="Go_Slide(2)">Projet TPE</a>
+      <a class="point" href="#top"  onclick="Go_Slide(3)">Candycrush Lite</a>
+      <a class="point" href="#top"  onclick="Go_Slide(4)">Portfolio</a>
+
+    </div>
+
+    <br>
+
+    <div class="Bloc_Slide">
+
+      <!-- Partie Blocus -->
+      <div class="Contenu_Slide">
+        <h2>Le jeu crée en langage C : Blocus</h2>
+        <h4>Consigne du Jeu</h4>
+        <aside>
+          <video controls muted title="Vidéo de présentation" width="500">
+            <source src="../image/page_Realisation/Game.mp4" type="video/mp4">
+          </video>
+        </aside>
+        <p class="texte">
+          Après avoir choisi une grille carré dont la taille est entre 3 et 9, l'un après l'autre, les deux joueurs
+           posent leur pion puis condamne une case. Ensuite, chaque joueur pourra déplacer son pion vers
+           une case adjacente (y compris en diagonale) et de nouveau condamnera une case. Le premier joueur qui
+           ne pourra pas déplacer son pion aura perdu.
+        </p>
+        <br>
+        <p class="texte">Bien que cela ne soit pas demandé, mon camarade et moi nous sommes permis de faire des ajouts graphiques
+        comme la coloration de la case où se situe la souris, mais également la différenciation des cases condamnée
+        pour savoir quel joueur a bloqué quelle case.</p>
+
+        <aside>
+          <img id="img_blocus" src="../image/page_Realisation/Game.png" alt="Image du jeu en C">
+        </aside>
+        <p class="texte texte2">De plus, pour éviter d'avoir un BOT trop aléatoire, nous avons instauré l'obligation que la case condamnée par le BOT soit autour
+        du joueur, ce qui permet de complexifier le jeu.</p>
+        <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        <p class="texte texte2">Coopérer avec un camarade fut la plus grande difficulté ce qui
+        oblige à avoir un code lisible et simple à comprendre. Ce problème résolu, l'exercice devient beaucoup
+        plus simple qu'il n'y paraît et surtout, m'a permis d'expérimenter de nouvelles choses apprises durant les cours. </p>
+
+        <p class="texte texte2">Vous pouvez accéder aux codes du jeu à travers <a target="_blank" id="link_git" href="https://github.com/M-Kossy/Blocus">ce lien.</a></p>
+      </div>
+
+      <!-- Partie site fait pour le TPE -->
+      <div class="Contenu_Slide">
+
+        <h2>Le site web qui a accompagné mon TPE sur le Sommeil</h2>
+        <a onmouseout="Not_Go_Web()" onmouseover="Go_Web()" target="_blank" href="https://deoxxe.wixsite.com/phytpesvt">
+          <img  id="img_TPE" src="../image/page_Realisation/Sommeil.png" alt="Image du site web TPE">
+          <p id="Site_TPE">Aller sur le site ?</p>
+        </a>
+
+        <div class="all_text_TPE">
+         <aside class="TPE_aside"> <br>
+          <h4>Expérience apprise</h4>
+
+          <p class="texte">J'ai appris à organiser les informations pour chaque
+          page de façon ordonnée et claire, mais également à anticiper les futures
+           informations qui pourraient être ajoutées et qui impacteraient l'ensemble d'une page.</p>
+         </aside>
+
+         <div>
+           <h4>Contexte</h4>
+
+
+           <p class="texte" id="TPE_texte_right">
+             Il nous a été demandé en 1ère pour l'épreuve de TPE d'ajouter un
+             support pour présenter mes recherches. J'ai de suite pensé avec mon partenaire
+             à le mettre sous forme de site afin de rendre la lecture agréable et facilement accessible.
+             Je me suis aidé de <a target="_blank" href="https://www.wix.com/">WIX</a> pour créer ce site.
+         </p>
+         </div>
+        </div>
+     </div>
+
+     <!-- Partie Candycrush Lite -->
+     <div class="Contenu_Slide">
+
+        <h2>Le jeu crée en langage Java : Candycrush Lite</h2>
+
+        <p class="texte"> Le jeu a été créé durant le second semestre de ma première année de DUT informatique. </p>
+
+        <h4>Consigne du Jeu</h4>
+        <aside>
+          <video controls muted title="Jeu en java Candycrush Lite : aléatoire" width="500">
+            <source src="../image/page_Realisation/game_CandycrushLite.mp4" type="video/mp4">
+          </video>
+        </aside>
+        <p class="texte">
+          Dans ce jeu, une grille est remplie de blocs de trois types et le but est de la vider. Un groupe de blocs adjacents et 
+           de même type peut être retiré en cliquant dessus. Les blocs restants se réarrangent afin de boucher les trous et on recommence jusqu'à avoir vidé la grille ou n'avoir plus que des blocs isolés.
+        </p>
+        <br>
+        <p class="texte">Bien que cela ne soit pas demandé, mon camarade et moi nous sommes permis de faire des ajouts graphiques
+        comme la coloration de la case où se situe la souris, mais également la différenciation des cases condamnée
+        pour savoir quel joueur a bloqué quelle case.</p>
+
+        <br>
+        <h4>Ouverture du jeu à partir d'un fichier</h4>
+
+        <p class="texte">Le jeu est capable de récupérer un fichier respectant une certaine syntaxe afin de créer le plateau de jeu. Vous pouvez voir ci-contre le contenu du fichier "test.txt" utilisé comme exemple dans la vidéo.</p>
+
+        <div class="video_img">
+          <video class="video_java" controls muted title="Jeu en java Candycrush Lite : fichier" width="500">
+            <source src="../image/page_Realisation/File_java.mp4" type="video/mp4">
+          </video>
+          <img src="../image/page_Realisation/exemple_file.png"> 
+        </div>
+
+        <br><br><br><br><br><br>
+        <p class="texte texte2">
+          Permettre d'importer des fichiers augmente les risques de bug surtout si le fichier ne respecte pas la synthaxe voulu. Pour cette raison, le programme est capable de gérer les erreurs et de les indiquer à l'utilisateur.
+
+          <div class="bloc_right">
+
+            <div class="bloc_down">
+              <img class="img_error" alt="exemple de message d'erreur d'un fichier non trouvé" src="../image/page_Realisation/erreur_file.png">
+              <p>Message d'erreur d'un fichier non trouvé</p>
+            </div>
+            <br><br><br>
+            <div class="bloc_down">
+              <img class="img_error" alt="exemple de message d'erreur d'un caractère non accepté" src="../image/page_Realisation/erreur_caract.png">
+              <p>Message d'erreur d'un caractère non accepté (différent de "R", "V", "B")</p>
+            </div>
+            <br><br><br>
+            <div class="bloc_down">
+              <img class="img_error" alt="exemple de message d'erreur d'une taille non conforme" src="../image/page_Realisation/erreur_taille.png">
+              <p>Message d'erreur d'une taille non conforme du tableau</p>
+            </div>
+            <br><br><br>
+          </div>
+
+        </p>
+        
+
+        <p class="texte texte2">Ce projet, en raison de l'utilisation du langage java, demande une organisation bien plus poussé. Cela permet de réfléchir à comment rendre accessible notre code à ses coéquipiers, sans que cela provoque de désaccord entre la classe créé et l'utilisateur du code qui doit pouvoir l'utiliser sans nécessité de connaître sa structure.</p>
+
+        <p class="texte texte2">Vous pouvez accéder aux codes du jeu à travers <a target="_blank" id="link_git" href="https://github.com/M-Kossy/Candycrush-Lite">ce lien.</a></p>
+      </div>
+
+      <!-- Partie Portfolio -->
+      <div class="Contenu_Slide">
+
+        <h2>Un travail regroupant HTML, CSS et JavaScript : le Portfolio</h2>
+
+        <p class="texte"> Le portfolio est à lui seul l'image de mes compétences. Former un CV à l'origine en pdf, former un moyen de
+           contact et montrer ses précédentes réalisations de façon fluide et agréable est l'épreuve qu'a demandé
+           la création de ce portfolio. Pour permettre une lecture facile et agréable, je me suis mis sous la peau
+           d'un internaute consultant ce portfolio. Ce site est également prévu pour permettre aux daltoniens de naviguer aussi facilement que n'importe quelle personne.</p>
+           <img id="img_portfolio" src="../image/page_Realisation/Portfolio.png" alt="Image du Portfolio">
+      </div>
+
+    </div>
+
+  </div>
+
+    <a id="go_top" href="#top"> <!-- Bouton pour  -->
+      <img src="../image/all_page/fleche_sign.png" alt="Retourner en Haut">
+    </a>
+
+    <!-- Bas de page -->
+    <footer>
+      <div>© 2020-2021 Dylan GIRAULT <br>
+       Certaines images proviennent des sites :
+       <a target="_blank" class="link" href="https://pixabay.com/fr/">pixabay</a>,
+       <a target="_blank" class="link" href="https://www.u-pec.fr/">UPEC</a>,
+       <a target="_blank" class="link" href="https://www.linkedin.com/">linkedin</a> <br>
+       Les polices d'écriture proviennent du site :
+       <a target="_blank" class="link" href="https://www.dafont.com/fr/">dafont</a>
+      </div>
+    <div> <img src="../image/all_page/Logo_IUT.png" alt="Logo de l'IUT de Sénart-Fontainebleau"></div>
+    </footer>
+    <!-- Fin de Bas de page -->
+
+<script src="../fichier_JS/realisation.js"></script>
+<script src="../fichier_JS/all_page.js"></script>
+
+  </body>
+</html>

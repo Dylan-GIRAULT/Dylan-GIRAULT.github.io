@@ -1,0 +1,162 @@
+@keyframes animation { /* Animation qui affiche tout les éléments en une opacité faible pour ensuite la rendre normale */
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+a {
+  cursor: pointer;
+}
+
+/* Bouton d'action avec le CV */
+
+.action_CV {
+  display: flex;
+  justify-content: center;
+}
+
+.imprimer { /* correspond au bouton d'impression */
+  border-left: 14px #252525 solid;
+  animation-name: animation;
+  animation-duration: 1.5s;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.download { /* correspond au bouton de téléchargement */
+  animation-name: animation;
+  animation-duration: 1.5s;
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 1em;
+}
+.download a {
+  text-decoration: none;
+  background-color: #FF8080;
+}
+
+.imprimer a {
+  padding-right: 10%;
+  text-decoration: none;
+  background-color: #FF8080;
+}
+
+.download a p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+
+.imprimer a p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+}
+
+.download a img {
+   width: 10em;
+   margin-left: 25%;
+ }
+
+ .imprimer a img {
+   width: 10em;
+   margin-left: 20px;
+   margin-top: 27px;
+ }
+
+ .download a:hover, .imprimer a:hover {
+   text-decoration: white underline;
+ }
+
+#info {
+  font-style: italic;
+  color: #CFCFCF;
+  text-align: center;
+}
+
+/* Fin des boutons en rapport avec le CV */
+
+/* CV */
+
+
+ a {
+   text-decoration-color: #27C6BA;
+   color : black;
+ }
+
+ a:hover {
+   color: #27C6BA;
+ }
+
+.list_bloc {
+  display: flex;
+  justify-content: space-around;
+
+  margin-bottom: 50px;
+}
+
+.bloc {
+  background-color: white;
+  border-radius: 10px;
+  border : 2px black solid;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.bloc span {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.bloc span progress {
+  margin-top: 5px;
+  margin-bottom: 20px;
+} 
+
+.bloc h4 {
+  text-align: center;
+  color : #3C364C;
+  text-decoration: underline;
+  font-size : 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.img_txt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img_txt img {
+  max-width: 40px;
+  margin-bottom: -20px;
+}
+
+.taille {
+  max-width: 50px;
+}
+
+.parcours {
+  max-width: 700px;
+  margin : auto;
+  margin-bottom : 20px;
+}
+
+.parcours img {
+  width : 75%;
+  margin-left: 80px;
+}
+

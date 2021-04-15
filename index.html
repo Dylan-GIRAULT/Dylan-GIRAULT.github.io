@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="fichier_CSS/all_page.css"> <!-- fichier CSS commun à tous les sites -->
+    <link rel="stylesheet" href="fichier_CSS/index.css"> <!-- fichier CSS spécifique à ce site -->
+    <link media=" screen and (max-width:1024px)" rel="stylesheet" href="fichier_CSS/tel_all_page.css"> <!-- version téléphone -->
+    <link media=" screen and (max-width:1024px)" rel="stylesheet" href="fichier_CSS/tel_index.css"> <!-- version téléphone -->
+    <link rel="shortcut icon" href="image/all_page/cask2.png"> <!-- Logo du site -->
+    <meta charset="utf-8">
+    <title>Dylan GIRAULT</title>
+  </head>
+  <body>
+
+<!-- Barre de navigation -->
+  <header id="ForAll">
+    <div onclick="CloseMenu()"><img id="quit_menu" src="image/all_page/croix.png" alt="quitter Menu"> </div>
+
+      <a href="#" class="Here" id="Accueil"><img alt="" src="image/all_page/house.png" id="Logo_1"> Accueil </a>
+      <a href="fichier_HTML/CV.html" class="Not_Here" id="CV"><img alt="" src="image/all_page/fichier.png" id="Logo_2"> CV </a>
+      <a href="fichier_HTML/realisation.html" class="Not_Here" id="Réalisation"><img alt="" src="image/all_page/stick.png" id="Logo_3"> Réalisations </a>
+      <a href="fichier_HTML/Contact.html" class="Not_Here" id="Contact"><img alt="" src="image/all_page/mail.png" id="Logo_4"> Contact </a>
+
+    <div id="menu_Tel" onclick="OpenMenu()"><img src="image/all_page/menu_tel.png"  id="img_menu_Tel" alt="Affiche le Menu">MENU</div>
+  </header>
+
+    <!-- Fin de Barre de navigation -->
+
+
+    <div class="Titre">
+      ACCUEIL <!-- Titre de la page -->
+    </div>
+
+<!-- Ligne de présentation de soi -->
+    <div class="Cadre">
+
+      <div class="Cadre_left">
+        <img src="image/index/Head.png" alt="Ma tête">
+        <p class="left_p"> <b>Dylan GIRAULT <br>
+            18 ans</b>
+        </p>
+      </div>
+
+      <div class="Cadre_right">
+        <p>Mes passions : <b>l'informatique</b> et acquérir de <b>nouvelles expériences</b>.</p> <br>
+        <p>Mon premier objectif : <b> obtenir une alternance</b> pour début <b>Septembre 2021</b>.</p> <br>
+        <p>Mon portfolio : Un moyen de vous communiquer <b>mes talents</b>.</p>
+      </div>
+
+    </div>
+
+    <div class="Cadre_CV">
+
+
+    </div>
+
+<!-- Ligne où les projets sont montrés -->
+    <div class="Cadre_Project">
+      <div class="Contenu_Project">
+        <div class="Texte_Project">
+          <div class="Project_Titre"><b>Intéressé ?</b></div>
+          <p>Je vous décris chacun de mes <br> projets qui m'a été amené de concevoir.</p>
+        </div>
+        <div id="Defilement" onmouseover="Go_Web()" onmouseout="Not_Go_Web()">
+          <a href="fichier_HTML/realisation.html">
+           <p id="Text_On_Defilement">Voir mon travail?</p>
+    	     <div id="Contenu_Defilement">
+             <img src="image/index/blocus.svg" alt="Jeu" />
+    		     <img src="image/index/html.png" alt="Site html" />
+    		     <img src="image/index/sommeil.png" alt="Linkedin" />
+    	     </div>
+          </a>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+<!-- Ligne indiquant les zones de contact -->
+    <div class="Cadre_Contact">
+      <div class="Contenu_Contact">
+        <div class="Contact_Titre"><b>Me Contacter</b></div>
+        <p class="Texte_Contact">Si vous souhaitez me contacter, <br>
+          vous pouvez aller sur mon <a target="_blank" href="https://www.linkedin.com/in/dylan-girault-a881451b6/">Linkedin</a>
+          ou bien <br> remplir <a target="_self" href="fichier_HTML/Contact.html">le formulaire de contact</a>.</p>
+
+      </div>
+    </div>
+
+
+
+    <a id="go_top" href="#top"> <!-- Bouton pour remonter en haut du site -->
+      <img src="image/all_page/fleche_sign.png" alt="Retourner en Haut">
+    </a>
+
+    <!-- Bas de page -->
+    <footer>
+      <div>© 2020-2021 Dylan GIRAULT <br>
+       Certaines images proviennent des sites :
+       <a target="_blank" class="link" href="https://pixabay.com/fr/">pixabay</a>,
+       <a target="_blank" class="link" href="https://www.u-pec.fr/">UPEC</a>,
+       <a target="_blank" class="link" href="https://www.linkedin.com/">linkedin</a> <br>
+       Les polices d'écriture proviennent du site :
+       <a target="_blank" class="link" href="https://www.dafont.com/fr/">dafont</a>
+      </div>
+      <div> <img src="image/all_page/Logo_IUT.png" alt="Logo de l'IUT de Sénart-Fontainebleau"></div>
+    </footer>
+    <!-- Fin de Bas de page -->
+
+    <script src="fichier_JS/all_page.js"></script>
+    <script src="fichier_JS/index.js"></script>
+  </body>
+
+
+</html>

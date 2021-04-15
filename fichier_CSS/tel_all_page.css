@@ -1,0 +1,61 @@
+#Logo_1 {
+  width: 10%;
+}
+
+#Logo_2 {
+  width: 10%;
+}
+
+#Logo_3 {
+  width: 10%;
+}
+
+#Logo_4 {
+  width: 10%;
+  background-color: white
+}
+
+header {
+  z-index: 8;
+flex-direction: column;
+justify-content: space-between;
+bottom : auto;
+top : -1350px;
+}
+
+#img_menu_Tel {
+width: 6%;
+margin-right: 2%;
+}
+
+header div {
+color: white;
+font-size: 50px;
+display: flex;
+}
+
+header a ~ * {
+margin-top: 22%;
+}
+
+header a {
+font-size: 50px;
+}
+
+#go_top {
+  bottom : 7%;
+  right : 10%;
+}
+
+#go_top img {
+  width: 100px;
+  height: auto;
+}
+
+
+#quit_menu {
+position: absolute;
+width: 20%;
+right: 0;
+top: 0;
+}

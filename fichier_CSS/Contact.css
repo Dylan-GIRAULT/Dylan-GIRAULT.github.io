@@ -1,0 +1,73 @@
+body {
+  color : white;
+}
+
+@keyframes animation { /* Animation qui affiche tout les éléments en une opacité faible pour ensuite la rendre normale */
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+form {
+  max-width: 1800px;
+  border-radius: 300px;
+  background-color: #535353;
+  border: 5px #535353 solid;
+}
+
+h2 {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+h3 a {
+  color : #27C6BA;
+}
+
+h3 a:hover {
+  text-decoration: underline #27C6BA;
+}
+
+aside {
+  max-width: 1800px;
+  border-radius: 300px;
+  border: 5px #535353 solid;
+  background-color: #535353;
+}
+
+.ALL { /* représente le formulaire et les moyens de contact */
+  animation-name: animation;
+  animation-duration: 1.5s;
+  margin-top: 4%;
+  margin-bottom: 5%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+input {
+  text-align: center;
+  border-radius: 10px;
+}
+
+textarea {
+  border-radius: 10px;
+  resize: none;
+  width: 50vw;
+  height: 10vw;
+}
+
+#img_linkedin {
+  max-width: 200px;
+  opacity: 0.4;
+}
+
+#texte_linkedin {
+  color : white;
+}
+
+#img_linkedin:hover {
+  opacity: 1;
+}
+
+

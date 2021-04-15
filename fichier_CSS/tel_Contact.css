@@ -1,0 +1,21 @@
+textarea {
+  font-size: 20px;
+  width: 400px;
+  height: 100px;
+}
+h2 {
+  font-size: 40px;
+}
+button {
+  font-size: 30px;
+  margin-bottom: 2%;
+}
+
+input {
+  height: 20px;
+  font-size: 20px;
+}
+
+label {
+  font-size: 30px;
+}

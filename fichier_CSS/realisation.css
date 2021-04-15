@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "Logoplexi";
+  src: url("../police/Logoplexi/Logoplexi-Regular.otf") format("truetype"),
+       url("../police/Logoplexi/Logoplexi-Regular.ttf") format("truetype");
+}
+
+body {
+  color : white;
+}
+
+@keyframes animation { /* Animation qui affiche tout les éléments en une opacité faible pour ensuite la rendre normale */
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+a {
+  color : white;
+}
+
+.ALL { /* Représente tout le bloc avec tous les slides et les points de transition */
+  margin: 5%;
+  display: flex;
+}
+
+ /* Les Points de transition entre les slides (sur la gauche) */
+.all_point {
+  left : 2%;
+  z-index: 2;
+  top : 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 1em;
+  position: fixed;
+  width: 9%;
+}
+
+.point {
+  opacity: 0.5;
+  font-size: 15px;
+  margin-top: 100%;
+  color: white;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 50px;
+  border : 0px black solid;
+}
+
+.point:hover, .active { /* si on a appuyé sur le texte ou bien que la souris passe dessus, cela colore */
+  opacity : 0.8;
+  background-color: green;
+  border-color: green;
+}
+/* Fin des points de transition */
+
+.Bloc_Slide { /* Représente tout les slides */
+  max-width: 1000px;
+  display: flex;
+  margin: auto;
+  background-color: #535353;
+  padding: 1%;
+  margin-bottom: 1%;
+  z-index: 0;
+}
+
+.Bloc_Slide a:hover { /* Met une ligne blanche sur les liens */
+  color :#42F0FB
+}
+
+/* Pour chaque Slide */
+
+.Contenu_Slide { /* Correspond à un slide */
+  display: none;
+  animation-name: animation;
+  animation-duration: 1.5s;
+}
+
+.Contenu_Slide img { /* Toutes images dans chaqu'un des slides */
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  color : #F3C562;
+  font-family: "Logoplexi", "Comic Sans MS";
+}
+
+h4 {
+  text-align: center;
+}
+
+
+aside { /* représente les éléments mis à droite des autres */
+  float: right;
+  padding-bottom: 5%;
+  margin-left: 1%;
+}
+
+.texte {
+  line-height: 2em;
+  color : white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.texte2 {
+  font-size: 30px;
+}
+
+.all_text_TPE {
+  display: flex;
+  justify-content: space-between;
+}
+
+.TPE_aside {
+  padding-left: 1%;
+  right : 0;
+  text-align: right;
+}
+
+#TPE_texte_right {
+  border-left: 2px black solid;
+}
+
+
+aside + .texte { /* représente les textes à gauche des éléments mis à droite */
+  margin-left: 20px;
+}
+
+/* Pour le slide Blocus */
+
+#img_blocus { /* image utilisé dans le slide blocus */
+
+  width :100%;
+}
+
+/* Pour le slide du TPE */
+
+#Site_TPE { /* texte qui s'affiche quand la souris est sur l'image du slide TPE */
+  font-size: 50px;
+  position: absolute; 
+  left: 35%;
+  top: 500px;
+  display: none;
+  text-decoration: none;
+  color : #42F0FB; 
+  text-align: center; 
+}
+
+#img_TPE { /* image utilisé dans le slide TPE */
+  width:100%;
+}
+
+#img_portfolio {
+  max-width: 100%;
+}
+
+#link_git {
+  color : #42F0FB;
+}
+
+/* pour le slide "Candycrush Lite" */
+
+#java_game_aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.video_img {
+  display: flex;
+  justify-content: space-around;
+  margin : auto;
+}
+
+.video_img img {
+  width: 25%;
+}
+
+.bloc_down {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+} 
+
+.bloc_down p {
+  text-align: center;
+  font-size: 20px;
+  margin : auto;
+}
+
+.img_error {
+  display: block;
+  width: 500px;
+  margin-left : 25%;
+}
