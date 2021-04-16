@@ -1,3 +1,8 @@
+@keyframes animation { /* Animation qui affiche tout les éléments en une opacité faible pour ensuite la rendre normale */
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
 .Cadre_Contact {
 	animation-name: animation;
   animation-duration: 1.5s;

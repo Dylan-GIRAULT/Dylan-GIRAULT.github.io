@@ -13,6 +13,8 @@
 /* gestion emplacement cadre */
 .Cadre_Project {
 	background-color: rgba(0, 0, 0, 0.4);
+  animation-name: animation;
+  animation-duration: 1.5s;
 }
 
 .Cadre_Project .list_title_project {
@@ -28,10 +30,13 @@
 
 .Cadre_Project .title_project:hover {
 	color: #3353B1;
+  cursor: pointer;
 }
 
 .Cadre_Project .description_project {
 	display: none;
+  animation-name: animation;
+  animation-duration: 1.5s;
 }
 
 

@@ -1,5 +1,13 @@
+@keyframes animation { /* Animation qui affiche tout les éléments en une opacité faible pour ensuite la rendre normale */
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
 .Cadre_CV {
 	background-color: #EBEBEB;
+	padding-right: -10px;
+	animation-name: animation;
+  animation-duration: 1.5s;
 }
 
 #Moi {
@@ -11,6 +19,24 @@
 	color: #363636;
 }
 
+.Cadre_CV .link_CV {
+	text-align: center;
+	margin: auto;
+}
+
+.Cadre_CV .link_CV a {
+	border: 2px black solid;
+	color : black;
+	font-size: 30px;
+  background-color: none;
+  border-radius: 5px;
+}
+
+.Cadre_CV .link_CV a:hover {
+  color : white;
+  background-color: black;
+  border-color : black;
+}
 .Cadre_CV .bloc_cursus {
 	display: flex;
 	flex-direction: column;

@@ -1,9 +1,3 @@
-header {
-  top : -1310px;
+.Cadre_CV .list_bloc {
+  flex-direction: column;
 }
-
-#menu_Tel {
-  margin-top: 170px;
-}
-
-
