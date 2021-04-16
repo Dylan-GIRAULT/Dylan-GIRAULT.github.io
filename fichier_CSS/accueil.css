@@ -1,0 +1,57 @@
+@keyframes AutoSlide {
+	 /* Slide qui fait défiler automatiquement de la 1er à la 3ème image */
+	0%, 15%, 100% {
+		left: -40px; /*1ère image*/
+	}
+	35%, 50% {
+		left: -360px; /*2ème image*/
+	}
+	70%, 85% {
+		left: -680px; /*3ème image*/
+	}
+}
+
+@keyframes animation { /* Animation qui affiche tout les éléments en une opacité faible pour ensuite la rendre normale */
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+/* ligne de la présentation de soi */
+.Cadre {
+	animation-name: animation;
+  animation-duration: 1.5s;
+  width: 100%;
+	margin-left: -22px;
+	padding-left: 30px;
+  display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+  font-size: 40px;
+  color: #CFD1D5;
+}
+
+.Cadre b {
+  color: #D8D8D8;
+}
+
+.Cadre_left {
+	text-align: center;
+  font-size: 30px;
+}
+
+.Cadre_left img {
+	border-radius: 10px;
+  width: 200px;
+}
+
+.left_p {
+	border-radius: 10px;
+	margin-top: 50px;
+}
+
+
+.Cadre_right p {
+	margin-right: 10px;
+	border-radius: 10px;
+	margin-left: 4%;
+}

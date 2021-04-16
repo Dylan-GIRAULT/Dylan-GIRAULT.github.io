@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
-    <link rel="stylesheet" href="fichier_CSS/all_page.css"> <!-- fichier CSS commun à tous les sites -->
-    <link rel="stylesheet" href="fichier_CSS/index.css"> <!-- fichier CSS spécifique à ce site -->
-    <link media=" screen and (max-width:1024px)" rel="stylesheet" href="fichier_CSS/tel_all_page.css"> <!-- version téléphone -->
-    <link media=" screen and (max-width:1024px)" rel="stylesheet" href="fichier_CSS/tel_index.css"> <!-- version téléphone -->
+    <link rel="stylesheet" href="fichier_CSS/head_footer.css"> <!-- fichier CSS spécifiques au header et footer -->
+    <link rel="stylesheet" href="fichier_CSS/accueil.css"> <!-- fichier CSS spécifique à la section accueil -->
+    <link rel="stylesheet" href="fichier_CSS/realisation.css">
+    <link rel="stylesheet" href="fichier_CSS/CV.css">
+    <link rel="stylesheet" href="fichier_CSS/Contact.css">
+    <link media=" screen and (max-width:1024px)" rel="stylesheet" href="fichier_CSS/tel_head_footer.css"> <!-- version téléphone -->
+    <link media=" screen and (max-width:1024px)" rel="stylesheet" href="fichier_CSS/tel_accueil.css"> <!-- version téléphone -->
     <link rel="shortcut icon" href="image/all_page/cask2.png"> <!-- Logo du site -->
     <meta charset="utf-8">
     <title>Dylan GIRAULT</title>
@@ -15,10 +18,10 @@
   <header id="ForAll">
     <div onclick="CloseMenu()"><img id="quit_menu" src="image/all_page/croix.png" alt="quitter Menu"> </div>
 
-      <a href="#" class="Here" id="Accueil"><img alt="" src="image/all_page/house.png" id="Logo_1"> Accueil </a>
-      <a href="fichier_HTML/CV.html" class="Not_Here" id="CV"><img alt="" src="image/all_page/fichier.png" id="Logo_2"> CV </a>
-      <a href="fichier_HTML/realisation.html" class="Not_Here" id="Réalisation"><img alt="" src="image/all_page/stick.png" id="Logo_3"> Réalisations </a>
-      <a href="fichier_HTML/Contact.html" class="Not_Here" id="Contact"><img alt="" src="image/all_page/mail.png" id="Logo_4"> Contact </a>
+      <a href="#top" class="nav-title" id="Accueil"><img alt="" src="image/all_page/house.png" id="Logo_1"> Accueil </a>
+      <a href="#Moi" class="nav-title" id="CV"><img alt="" src="image/all_page/fichier.png" id="Logo_2"> CV </a>
+      <a href="#Realisation" class="nav-title" id="Réalisation"><img alt="" src="image/all_page/stick.png" id="Logo_3"> Réalisations </a>
+      <a href="#Contacter" class="nav-title" id="Contact"><img alt="" src="image/all_page/mail.png" id="Logo_4"> Contact </a>
 
     <div id="menu_Tel" onclick="OpenMenu()"><img src="image/all_page/menu_tel.png"  id="img_menu_Tel" alt="Affiche le Menu">MENU</div>
   </header>
@@ -26,8 +29,8 @@
     <!-- Fin de Barre de navigation -->
 
 
-    <div class="Titre">
-      ACCUEIL <!-- Titre de la page -->
+    <div id="Accueil" class="Titre">
+      ACCUEIL <!-- Titre de la section -->
     </div>
 
 <!-- Ligne de présentation de soi -->
@@ -41,75 +44,396 @@
       </div>
 
       <div class="Cadre_right">
-        <p>Mes passions : <b>l'informatique</b> et acquérir de <b>nouvelles expériences</b>.</p> <br>
-        <p>Mon premier objectif : <b> obtenir une alternance</b> pour début <b>Septembre 2021</b>.</p> <br>
+        <p>Mes passions : <b>l'informatique</b> et acquérir de <b>nouvelles expériences</b>.</p>
+        <p>Mon premier objectif : <b> obtenir une alternance</b> pour début <b>Septembre 2021</b>.</p>
         <p>Mon portfolio : Un moyen de vous communiquer <b>mes talents</b>.</p>
       </div>
 
     </div>
 
+<!-- Présentation de mes compétences -->
+
     <div class="Cadre_CV">
 
+      <div id="Moi" class="Titre">
+        A propos de moi <!-- Titre de la section -->
+      </div>
+
+      <div class="list_bloc">
+        <div class="bloc_cursus">
+          <h4>Cursus Scolaire</h4>
+
+          <div class="cursus">
+            <div class="name_cursus">DUT Informatique <b>2021</b> </div>
+            <span>En cours</span>
+            <p>IUT de Sénart-Fontainebleau site de Fontainebleau</p>
+          </div>
+          <br>
+          <div class="cursus">
+            <div class="name_cursus">Baccalauréat scientifique spécialité mathématique <b>2020</b> </div>
+            <span>Mention assez bien</span>
+            <p>Lycée Pierre Mendès France à Savigny-le-Temple</p>
+          </div>
+
+          <h4>Expérience Professionnelle</h4>
+
+          <div class="cursus">
+            <div class="name_cursus">Traducteur Français <b>Novembre - Décembre 2018</b> </div>
+            <span>Bénévolat</span>
+            <p>Stranga Games en Australie</p>
+          </div>
+          <br>
+          <div class="cursus">
+            <div class="name_cursus">Entretien et Restauration <b>23-27 janvier 2017</b> </div>
+            <span>Stage</span>
+            <p>Ecole Pierre Brossolette à Savigny-le-Temple</p>
+          </div>
+        </div>
+
+        <!-- Compétence -->
+        <div class="bloc">
+          <h4>Compétence</h4>
+          <table cellpadding="10" cellspacing="20">
+            <tr>
+              <td>Programmation Système et Réseau</td>
+              <td><progress value="90" max="100"></td>
+            </tr>
+
+            <tr>
+              <td>Développement Web</td>
+              <td><progress value="75" max="100"></td>
+            </tr>
+
+            <tr>
+              <td>Base de Données</td>
+              <td><progress value="75" max="100"></td>
+            </tr>
+
+            <tr>
+              <td>Administation et Réseau</td>
+              <td><progress value="70" max="100"></td>
+            </tr>
+
+            <tr>
+              <td>Pack Office</td>
+              <td><progress value="80" max="100"></td>
+            </tr>
+
+            <tr>
+              <td>Anglais</td>
+              <td><progress value="80" max="100"></td>
+            </tr>
+
+            <tr>
+              <td>Espagnol</td>
+              <td><progress value="50" max="100"></td>
+            </tr>
+
+            <tr>
+              <td>C89</td>
+              <td><progress value="90" max="100"></td>
+            </tr>
+
+            <tr>
+              <td>Java</td>
+              <td><progress value="90" max="100"></td>
+            </tr>
+
+            <tr>
+              <td>HTML5</td>
+              <td><progress value="75" max="100"></td>
+            </tr>
+
+            <tr>
+              <td>CSS3</td>
+              <td><progress value="60" max="100"></td>
+            </tr>
+
+            <tr>
+              <td>Javascript</td>
+              <td><progress value="80" max="100"></td>
+            </tr>
+
+            <tr>
+              <td>PHP</td>
+              <td><progress value="70" max="100"></td>
+            </tr>
+
+            <tr>
+              <td>PLSQL</td>
+              <td><progress value="70" max="100"></td>
+            </tr>
+
+            <tr>
+              <td>Bash</td>
+              <td><progress value="60" max="100"></td>
+            </tr>
+
+          </table>
+
+        </div>
+
+      </div>
 
     </div>
 
 <!-- Ligne où les projets sont montrés -->
     <div class="Cadre_Project">
-      <div class="Contenu_Project">
-        <div class="Texte_Project">
-          <div class="Project_Titre"><b>Intéressé ?</b></div>
-          <p>Je vous décris chacun de mes <br> projets qui m'a été amené de concevoir.</p>
+
+      <div id="Realisation" class="Titre">
+        Réalisation <!-- Titre de la section -->
+      </div>
+
+      <div class="list_title_project">
+        <a class="title_project" href="#Realisation" onclick="Go_Slide(1)">Blocus</a>
+        <a class="title_project" href="#Realisation" onclick="Go_Slide(2)">Site web</a>
+        <a class="title_project" href="#Realisation" onclick="Go_Slide(3)">Candycrush Lite</a>
+        <a class="title_project" href="#Realisation" onclick="Go_Slide(4)">Portfolio</a>
+      </div>
+
+      <div class="list_description_project">
+
+          <div class="description_project">
+            <h2>Le jeu crée en langage C : Blocus</h2>
+            <h4>Consigne du Jeu</h4>
+            <aside>
+              <video controls muted title="Vidéo de présentation" width="500">
+                <source src="image/page_Realisation/Game.mp4" type="video/mp4">
+              </video>
+            </aside>
+            <p class="texte">
+              Après avoir choisi une grille carré dont la taille est entre 3 et 9, l'un après l'autre, les deux joueurs <br>
+               posent leur pion puis condamne une case. Ensuite, chaque joueur pourra déplacer son pion vers <br>
+               une case adjacente (y compris en diagonale) et de nouveau condamnera une case. Le premier joueur qui <br>
+               ne pourra pas déplacer son pion aura perdu.
+            </p>
+            <p class="texte">Bien que cela ne soit pas demandé, mon camarade et moi nous sommes permis de faire des ajouts graphiques <br>
+            comme la coloration de la case où se situe la souris, mais également la différenciation des cases condamnée <br>
+            pour savoir quel joueur a bloqué quelle case.</p>
+            <br><br><br><br>
+            <aside>
+              <img id="img_blocus" src="image/page_Realisation/Game.png" alt="Image du jeu en C">
+            </aside>
+            <p class="texte texte2">De plus, pour éviter d'avoir un BOT trop aléatoire, nous avons instauré l'obligation que la case condamnée par le BOT soit autour
+            du joueur, ce qui permet de complexifier le jeu.</p>
+            <br> <br> <br> <br> <br> <br> <br> <br> <br><br><br><br>
+            <p class="texte texte2">Coopérer avec un camarade fut la plus grande difficulté ce qui
+            oblige à avoir un code lisible et simple à comprendre. Ce problème résolu, l'exercice devient beaucoup
+            plus simple qu'il n'y paraît et surtout, m'a permis d'expérimenter de nouvelles choses apprises durant les cours. </p>
+
+            <p class="texte texte2"><a target="_blank" class="link_git" href="https://github.com/Dylan-GIRAULT/Blocus">Lien du code</a></p>
+
+          </div>
+
+          <div class="description_project">
+            <h2>Le site web qui a accompagné mon TPE sur le Sommeil</h2>
+            <div class="bloc_img_TPE">
+              <img  id="img_TPE" src="image/page_Realisation/Sommeil.png" alt="Image du site web TPE">
+            </div>
+
+            <div class="all_text_TPE">
+             <aside class="TPE_aside"> <br>
+              <h4>Expérience apprise</h4>
+
+              <p class="texte">J'ai appris à organiser les informations pour chaque
+              page de façon ordonnée et claire, mais également à anticiper les futures
+               informations qui pourraient être ajoutées et qui impacteraient l'ensemble d'une page.</p>
+             </aside>
+
+             <div>
+               <h4>Contexte</h4>
+
+
+               <p class="texte" id="TPE_texte_right">
+                 Il nous a été demandé en 1ère pour l'épreuve de TPE d'ajouter un
+                 support pour présenter mes recherches. J'ai de suite pensé avec mon partenaire
+                 à le mettre sous forme de site afin de rendre la lecture agréable et facilement accessible. <br>
+                 Je me suis aidé de <a target="_blank" href="https://www.wix.com/">WIX</a> pour créer ce site.
+               </p>
+             </div>
+            </div>
+            <p class="texte texte2"><a class="link_git" href="https://deoxxe.wixsite.com/phytpesvt" target="_blank">Aller voir le site ?</a></p>
+
+          </div>
+
+          <!-- Jeu Candycrush Lite -->
+          <div class="description_project">
+            <h2>Le jeu crée en langage Java : Candycrush Lite</h2>
+
+            <p class="texte"> Le jeu a été créé durant le second semestre de ma première année de DUT informatique. </p>
+
+            <h4>Consigne du Jeu</h4>
+            <aside>
+              <video controls muted title="Jeu en java Candycrush Lite : aléatoire" width="500">
+                <source src="image/page_Realisation/game_CandycrushLite.mp4" type="video/mp4">
+              </video>
+            </aside>
+            <p class="texte">
+              Dans ce jeu, une grille est remplie de blocs de trois types et le but est de la vider. Un groupe de blocs adjacents et <br>
+               de même type peut être retiré en cliquant dessus. Les blocs restants se réarrangent afin de boucher les trous et on recommence <br>
+               jusqu'à avoir vidé la grille ou n'avoir plus que des blocs isolés.
+            </p>
+            <br>
+            <p class="texte">Bien que cela ne soit pas demandé, mon camarade et moi nous sommes permis de faire des ajouts graphiques <br>
+            comme la coloration de la case où se situe la souris, mais également la différenciation des cases condamnée <br>
+            pour savoir quel joueur a bloqué quelle case.</p>
+
+            <br>
+            <h4>Ouverture du jeu à partir d'un fichier</h4>
+
+            <p class="texte">Le jeu est capable de récupérer un fichier respectant une certaine syntaxe afin de créer le plateau de jeu.<br> Vous pouvez voir ci-contre le contenu du fichier "test.txt" utilisé comme exemple dans la vidéo.</p>
+
+            <div class="video_img">
+              <video class="video_java" controls muted title="Jeu en java Candycrush Lite : fichier" width="500">
+                <source src="image/page_Realisation/File_java.mp4" type="video/mp4">
+              </video>
+              <img src="image/page_Realisation/exemple_file.png">
+            </div>
+
+            <br><br><br><br><br><br>
+            <p class="texte texte2">
+              Permettre d'importer des fichiers augmente les risques de bug surtout si le fichier ne respecte pas la synthaxe voulu. <br>
+              Pour cette raison, le programme est capable de gérer les erreurs et de les indiquer à l'utilisateur.
+
+              <div class="bloc_right">
+
+                <div class="bloc_down">
+                  <img class="img_error" alt="exemple de message d'erreur d'un fichier non trouvé" src="image/page_Realisation/erreur_file.png">
+                  <p>Message d'erreur d'un fichier non trouvé</p>
+                </div>
+                <br><br><br>
+                <div class="bloc_down">
+                  <img class="img_error" alt="exemple de message d'erreur d'un caractère non accepté" src="image/page_Realisation/erreur_caract.png">
+                  <p>Message d'erreur d'un caractère non accepté (différent de "R", "V", "B")</p>
+                </div>
+                <br><br><br>
+                <div class="bloc_down">
+                  <img class="img_error" alt="exemple de message d'erreur d'une taille non conforme" src="image/page_Realisation/erreur_taille.png">
+                  <p>Message d'erreur d'une taille non conforme du tableau</p>
+                </div>
+                <br><br><br>
+              </div>
+
+            </p>
+
+
+            <p class="texte texte2">Ce projet, en raison de l'utilisation du langage java, demande une organisation bien plus poussé. <br> Cela permet de réfléchir à comment rendre accessible notre code à ses coéquipiers, sans que cela provoque de désaccord entre la classe créé et l'utilisateur du code qui doit pouvoir l'utiliser sans nécessité de connaître sa structure.</p>
+
+            <p class="texte texte2"><a target="_blank" class="link_git" href="https://github.com/Dylan-GIRAULT/Candycrush_Lite">Lien du code</a></p>
+
+          </div>
+
+          <div class="description_project">
+            <h2>Un travail regroupant HTML, CSS et JavaScript : le Portfolio</h2>
+
+            <p class="texte"> Le portfolio est à lui seul l'image de mes compétences. Former un CV à l'origine en pdf, former un moyen de <br>
+               contact et montrer ses précédentes réalisations de façon fluide et agréable est l'épreuve qu'a demandé <br>
+               la création de ce portfolio. Pour permettre une lecture facile et agréable, je me suis mis sous la peau  <br>
+               d'un internaute consultant ce portfolio. Ce site est également prévu pour permettre aux daltoniens de naviguer aussi facilement que n'importe quelle personne.</p>
+
+          </div>
+
         </div>
-        <div id="Defilement" onmouseover="Go_Web()" onmouseout="Not_Go_Web()">
-          <a href="fichier_HTML/realisation.html">
-           <p id="Text_On_Defilement">Voir mon travail?</p>
-    	     <div id="Contenu_Defilement">
-             <img src="image/index/blocus.svg" alt="Jeu" />
-    		     <img src="image/index/html.png" alt="Site html" />
-    		     <img src="image/index/sommeil.png" alt="Linkedin" />
-    	     </div>
-          </a>
-        </div>
-
-
-
       </div>
     </div>
 
 
 <!-- Ligne indiquant les zones de contact -->
     <div class="Cadre_Contact">
-      <div class="Contenu_Contact">
-        <div class="Contact_Titre"><b>Me Contacter</b></div>
-        <p class="Texte_Contact">Si vous souhaitez me contacter, <br>
-          vous pouvez aller sur mon <a target="_blank" href="https://www.linkedin.com/in/dylan-girault-a881451b6/">Linkedin</a>
-          ou bien <br> remplir <a target="_self" href="fichier_HTML/Contact.html">le formulaire de contact</a>.</p>
 
+      <div id="Contacter" class="Titre">
+        Contact <!-- Titre de la section -->
+      </div>
+
+        <div class="list_contact_img">
+<!--
+          <span class="img_txt">
+            <img src="image/page_CV/tel.png" alt="Numéro de téléphone"><br>
+            +33 6.51.74.20.83
+          </span>
+
+          <span class="img_txt">
+            <a href="mailto:dylangirault973@gmail.com" target="_blank">
+              <img class="taille" src="image/page_CV/mail.png" alt="Adresse Email"><br>
+              dylangirault973@gmail.com
+            </a>
+          </span>
+
+          <span class="img_txt">
+            <a href="https://linkedin.com/in/dylan-girault-a881451b6" target="_blank">
+              <img class="taille" src="image/page_CV/linkedin.png" alt="Mon Linkedin"> <br>
+              linkedin.com/in/dylan-girault-a88145b6
+            </a>
+-->
+
+          <div class="bloc_contact">
+            <img src="image/page_Contact/tel.png" alt="Numéro de téléphone"><br>
+          </div>
+
+          <div class="bloc_contact">
+            <img class="taille" src="image/page_Contact/mail.png" alt="Adresse Email"><br>
+          </div>
+
+          <div class="bloc_contact">
+            <img class="taille" src="image/page_Contact/linkedin.png" alt="Mon Linkedin"><br>
+          </div>
+
+          <div class="bloc_contact">
+            <img src="image/page_Contact/github.png" alt="Mon gitHub">
+          </div>
+        </div>
+
+        <div class="list_contact_txt">
+
+          <div class="bloc_contact">
+            <p>+33 6.51.74.20.83</p>
+          </div>
+
+          <div class="bloc_contact">
+            <a href="mailto:dylangirault973@gmail.com" target="_blank">
+              <p>dylangirault973@gmail.com</p>
+            </a>
+          </div>
+
+          <div class="bloc_contact">
+            <a href="https://linkedin.com/in/dylan-girault-a881451b6" target="_blank">
+              <p>Mon Profil Linkedin</p>
+            </a>
+          </div>
+
+          <div class="bloc_contact">
+            <a href="https://github.com/Dylan-GIRAULT" target="_blank">
+              <p>Mon Profil GitHub</p>
+            </a>
+
+          </div>
+        </div>
+
+
+        </span>
       </div>
     </div>
 
 
 
-    <a id="go_top" href="#top"> <!-- Bouton pour remonter en haut du site -->
-      <img src="image/all_page/fleche_sign.png" alt="Retourner en Haut">
-    </a>
+
 
     <!-- Bas de page -->
     <footer>
       <div>© 2020-2021 Dylan GIRAULT <br>
        Certaines images proviennent des sites :
        <a target="_blank" class="link" href="https://pixabay.com/fr/">pixabay</a>,
-       <a target="_blank" class="link" href="https://www.u-pec.fr/">UPEC</a>,
-       <a target="_blank" class="link" href="https://www.linkedin.com/">linkedin</a> <br>
+       <a target="_blank" class="link" href="https://www.linkedin.com/">linkedin</a>,
+      <a href="https://github.com/" class="link">GitHub</a><br>
        Les polices d'écriture proviennent du site :
        <a target="_blank" class="link" href="https://www.dafont.com/fr/">dafont</a>
       </div>
-      <div> <img src="image/all_page/Logo_IUT.png" alt="Logo de l'IUT de Sénart-Fontainebleau"></div>
     </footer>
     <!-- Fin de Bas de page -->
 
     <script src="fichier_JS/all_page.js"></script>
     <script src="fichier_JS/index.js"></script>
+    <script src="fichier_JS/realisation.js"></script>
   </body>
 
 

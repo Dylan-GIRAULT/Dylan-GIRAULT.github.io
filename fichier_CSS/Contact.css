@@ -1,73 +1,46 @@
-body {
-  color : white;
-}
-
-@keyframes animation { /* Animation qui affiche tout les éléments en une opacité faible pour ensuite la rendre normale */
-  from {opacity: 0.4}
-  to {opacity: 1}
-}
-
-form {
-  max-width: 1800px;
-  border-radius: 300px;
-  background-color: #535353;
-  border: 5px #535353 solid;
-}
-
-h2 {
-  font-size: 30px;
-  text-decoration: underline;
-}
-
-h3 a {
-  color : #27C6BA;
-}
-
-h3 a:hover {
-  text-decoration: underline #27C6BA;
-}
-
-aside {
-  max-width: 1800px;
-  border-radius: 300px;
-  border: 5px #535353 solid;
-  background-color: #535353;
-}
-
-.ALL { /* représente le formulaire et les moyens de contact */
-  animation-name: animation;
+.Cadre_Contact {
+	animation-name: animation;
   animation-duration: 1.5s;
-  margin-top: 4%;
-  margin-bottom: 5%;
+	border-top: 1px #FFB66D solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+	font-size: 40px;
+	background-color: white;
+}
+
+.Cadre_Contact .Titre {
+	color: black;
+}
+
+.Cadre_Contact .list_contact_img, .Cadre_Contact .list_contact_txt {
   display: flex;
-  text-align: center;
-  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 10px;
 }
 
-
-input {
-  text-align: center;
-  border-radius: 10px;
+.Cadre_Contact .taille {
+  max-width: 40px;
 }
 
-textarea {
-  border-radius: 10px;
-  resize: none;
-  width: 50vw;
-  height: 10vw;
+.Cadre_Contact .img_txt img {
+  max-width: 50px;
 }
 
-#img_linkedin {
-  max-width: 200px;
-  opacity: 0.4;
+#Contacter {
+  font-size: 70px;
 }
 
-#texte_linkedin {
-  color : white;
+.Cadre_Contact .bloc_contact img {
+	max-width: 40px;
 }
 
-#img_linkedin:hover {
-  opacity: 1;
+.Cadre_Contact .bloc_contact a {
+	text-decoration: 2px black underline;
 }
 
-
+.Cadre_Contact .bloc_contact p {
+	font-size: 20px;
+	color: black;
+}

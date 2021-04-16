@@ -10,12 +10,13 @@
 }
 
 body {
-  background-color: #252525;
+  background-image: linear-gradient(rgba(48, 65, 86, 0.8), rgba(48, 65, 86, 0.8)), url("../image/index/background2.png");
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
 }
 
-.Titre { /* représente le titre de chaque page */
+.Titre { /* représente le titre de chaque section de la page */
   font-family: "Potra";
   margin-left: -8px;
   padding-right: 16px;
@@ -36,7 +37,6 @@ a {
 
 header {
   z-index: 1;
-  opacity: 0.8;
   position: fixed;
   top:0;
   left : 0;
@@ -72,41 +72,17 @@ header div {
 }
 
 
-.Not_Here:hover {
-
-  text-decoration: black underline;
-  color: #FFFFD0;
+.nav-title:hover {
+  color: #939393;
 }
 
-.Here {
-  color: orange;
-  text-decoration : black underline;
-}
-
-.Not_Here {
+.nav-title {
   color: white;
   text-decoration-line: none;
 }
 
-#go_top {
-  opacity: 0.7;
-  position: fixed;
-   width: 50px;
-   height: 50px;
-   bottom: 100px;
-   right: 30px;
- }
- #go_top:hover {
-   opacity: 1;
- }
-
-
- #go_top img {
-  transform: rotate(180deg);
-  width: 50px;
-}
-
  footer {
+   font-size: 10px;
   margin: -8px;
   display: flex;
   border: 20px black solid;
@@ -114,12 +90,6 @@ header div {
   color: grey;
   justify-content: space-around;
   font-family: "Verdana", "Comic Sans MS";
-}
-
-footer img {
-  border: 2px white solid;
-  background-color: white;
-  width: 10em;
 }
 
 .link { /* représente les liens se situant dans le bas de page */
