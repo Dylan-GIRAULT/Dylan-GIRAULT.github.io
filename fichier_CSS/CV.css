@@ -24,7 +24,7 @@
 	margin: auto;
 }
 
-.Cadre_CV .link_CV a {
+.Cadre_CV .link_CV .a_link_CV {
 	border: 2px black solid;
 	color : black;
 	font-size: 30px;
@@ -32,11 +32,12 @@
   border-radius: 5px;
 }
 
-.Cadre_CV .link_CV a:hover {
+.Cadre_CV .link_CV .a_link_CV:hover {
   color : white;
   background-color: black;
   border-color : black;
 }
+
 .Cadre_CV .bloc_cursus {
 	display: flex;
 	flex-direction: column;
