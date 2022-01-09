@@ -1,137 +1,154 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="fichier_CSS/head_footer.css"> <!-- fichier CSS spécifiques au header et footer -->
-    <link rel="stylesheet" href="fichier_CSS/accueil.css"> <!-- fichier CSS spécifique à la section accueil -->
-    <link rel="stylesheet" href="fichier_CSS/realisation.css">
-    <link rel="stylesheet" href="fichier_CSS/CV.css">
-    <link rel="stylesheet" href="fichier_CSS/Contact.css">
-    <link media=" screen and (max-width:1024px)" rel="stylesheet" href="fichier_CSS/tel_accueil.css"> <!-- version téléphone -->
-    <link media=" screen and (max-width:1024px)" rel="stylesheet" href="fichier_CSS/tel_CV.css">
-    <link media=" screen and (max-width:1024px)" rel="stylesheet" href="fichier_CSS/tel_Realisation.css">
-    <link media=" screen and (max-width:1024px)" rel="stylesheet" href="fichier_CSS/tel_Contact.css">
-
-    <link rel="shortcut icon" href="image/all_page/cask2.png"> <!-- Logo du site -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" href="./image/all_page/cask2.png"> <!-- Logo du site -->
+	<link rel="stylesheet" href="./fichier_CSS/index.css">
     <meta charset="utf-8">
     <title>Dylan GIRAULT</title>
   </head>
   <body>
 
 <!-- Barre de navigation -->
-  <header id="ForAll">
+  <header class="w3-cell-row w3-blue w3-fixed w3-xlarge w3-padding" style="position: fixed; top:0;">
 
-        <a href="#top" class="nav-title" id="Accueil"><img alt="" src="image/all_page/house.png" id="Logo_1"> Home </a>
-        <a href="#Moi" class="nav-title" id="CV"><img alt="" src="image/all_page/fichier.png" id="Logo_2"> About Me </a>
-        <a href="#Realisation" class="nav-title" id="Réalisation"><img alt="" src="image/all_page/stick.png" id="Logo_3"> Work </a>
-        <a href="#Contacter" class="nav-title" id="Contact"><img alt="" src="image/all_page/mail.png" id="Logo_4"> Contact </a>
-        <a href="fr" class="nav-title" id="French">French</a>
+        <a href="#top" class="nav-title w3-cell w3-button w3-mobile w3-hover-blue w3-hover-text-black"><i class="fa fa-home"></i> Home </a>
+        <a href="#Moi" class="nav-title w3-cell w3-button w3-mobile w3-hover-blue w3-hover-text-black"><i class="fa fa-user"></i> About Me </a>
+        <a href="#Realisation" class="nav-title w3-cell w3-button w3-mobile w3-hover-blue w3-hover-text-black"><i class="fa fa-briefcase"></i> Work </a>
+        <a href="#Contacter" class="nav-title w3-cell w3-button w3-mobile w3-hover-blue w3-hover-text-black"><i class="fa fa-envelope "></i> Contact </a>
+        <a href="./fr/" class="nav-title w3-cell w3-button w3-mobile w3-hover-blue w3-hover-text-black"><i class="fa fa-language"></i> French</a>
 
   </header>
 
     <!-- Fin de Barre de navigation -->
 
-
-    <div id="Accueil" class="Titre">
-      HOME <!-- Titre de la section -->
-    </div>
+  <div class="w3-container">
+	<h2 id="Accueil" class="title w3-center w3-text-orange" style="padding-top:100px;">
+		HOME <!-- Titre de la section -->
+	</h2>
 
 <!-- Ligne de présentation de soi -->
-    <div class="Cadre">
-
-      <div class="Cadre_left">
-        <img src="image/index/Head.png" alt="Ma tête">
-        <p class="left_p"> <b>Dylan GIRAULT <br>
-            18 years</b>
-        </p>
+    
+	<div class="w3-cell-row" style="padding-left: 100px;">
+      <div class="w3-container w3-center w3-cell w3-xlarge w3-mobile w3-text-white">
+		<img class="w3-round" src="./image/index/Head.png" alt="Ma tête">
+		<p class=""> <b>Dylan GIRAULT</b></p>
+		<p class=""><b>19 years</b></p>
       </div>
 
-      <div class="Cadre_right">
-        <p>My passions : <b>IT</b> and gaining <b>new experiences</b>.</p>
-        <p>My first aim : <b> to obtain a work-study program</b> for the beginning of <b>September 2021</b>.</p>
-        <p>My portfolio : A way to communicate <b>my competencies to you</b>.</p>
+      <div class="w3-container w3-cell w3-xxlarge w3-mobile">
+        <p class="w3-text-white">My passions : <b>IT</b> and gaining <b>new experiences</b>.</p>
+        <p class="w3-text-white">My portfolio : A way to communicate <b>my competencies to you</b>.</p>
       </div>
 
     </div>
+
+  </div>
 
 <!-- Présentation de mes compétences -->
 
-    <div class="Cadre_CV">
+    <div id="Moi" class="w3-container w3-white">
 
-      <div id="Moi" class="Titre">
+      <div class="title w3-center w3-text-black" style="padding-top:100px;">
         About Me <!-- Titre de la section -->
       </div>
 
-      <div class="link_CV">
-        <a class="a_link_CV" href="image/page_CV/Dylan_GIRAULT_Resume.pdf" target="_blank">My resume</a>
+      <div class="w3-center">
+        <a class="w3-round w3-border w3-hover-black w3-button" href="image/page_CV/Dylan_GIRAULT_Resume.pdf" target="_blank">My resume</a>
       </div>
 
 
-      <div class="list_bloc">
-        <div class="bloc_cursus">
-          <h4>School Curriculum</h4>
+      <div class="w3-cell-row">
+        <div class="w3-cell">
+          <h2 class="sub-title w3-padding"><b>School Curriculum</b></h2> <!-- Cursus Scolaire -->
 
-          <div class="cursus">
-            <div class="name_cursus">DUT in IT <b>2021</b> </div>
-            <span>current</span>
+          <div class="w3-container w3-card-4">
+		   <div class="w3-padding">
+            <div class="name_cursus">DUT in IT <b>2022</b> </div>
+            <span>Current</span>
             <p>University Institute of Technology of Sénart-Fontainebleau site of Fontainebleau</p>
+		   </div>
           </div>
-          <br>
-          <div class="cursus">
+		<br>
+          <div class="w3-container w3-card-4">
+		   <div class="w3-padding">
             <div class="name_cursus">Scientific Baccalaureat Mathematic Specialization <b>2020</b> </div>
             <span>pass 60-70%</span>
             <p>High School Pierre Mendès France at Savigny-le-Temple</p>
+		   </div>
           </div>
 
-          <h4>Professional Experience.</h4>
-			
-			
-		  <div class="cursus">
-            <div class="name_cursus">Test Analyst Junior <b>July - August 2021</b> </div>
-            <span>fixed-term contract</span>
+          <h2 class="sub-title w3-padding"><b>Professional Experience</b></h2> <!-- Expérience Professionnelle -->
+
+          <div class="w3-container w3-card-4">
+		   <div class="w3-padding w3-mobile">
+            <div class="name_cursus">Test Analyst Junior <b>September 2021 - August 2022</b> </div>
+            <span>Study contract</span>
+		   </div>
+		
+		   <div class="w3-padding">
+            <div class="name_cursus"><b>July - August 2021</b> </div>
+            <span>Fixed-term contract</span>
             <p>Easyvista at Noisy-le-Grand</p>
+		   </div>
           </div>
-		  <br>
-          <div class="cursus">
+		<br>
+          <div class="w3-container w3-card-4">
+		   <div class="w3-padding">
             <div class="name_cursus">French Translator <b>November - December 2018</b> </div>
             <span>Voluntary work</span>
             <p>Stranga Games in Australia</p>
+		   </div>
           </div>
-          <br>
-          <div class="cursus">
+        <br>
+          <div class="w3-container w3-card-4">
+		   <div class="w3-padding">
             <div class="name_cursus">Maintenance and Food Service <b>23-27 January 2017</b> </div>
             <span>Internship</span>
-            <p>School Pierre Brossolette at Savigny-le-Temple</p>
+            <p>Ecole Pierre Brossolette at Savigny-le-Temple</p>
+		   </div>
           </div>
-		  
 
-          <h4>Software</h4>
+          <h2 class="sub-title w3-padding"><b>Software</b></h2>
 
           <table cellspacing="15">
+
             <tr>
               <td>Oracle SQL Developer</td>
             </tr>
+
+            <tr>
+              <td>Pack Office</td>
+            </tr>
+
             <tr>
               <td>Atom</td>
             </tr>
+
             <tr>
               <td>Visual Studio 2019</td>
             </tr>
+
             <tr>
               <td>SQLiteStudio</td>
             </tr>
+
             <tr>
               <td>Sublime Text</td>
             </tr>
+
 			<tr>
-			  <td>Ranorex</td>
-			</tr>
+              <td>Ranorex</td>
+            </tr>
+
           </table>
+
         </div>
 
         <!-- Compétence -->
-        <div class="bloc">
-          <h4>Competence</h4>
-          <table cellpadding="10" cellspacing="20">
+        <div class="w3-cell">
+          <h2 class="sub-title w3-padding"><b>Competence</b></h2>
+          <table cellpadding="10" cellspacing="20" class="w3-large">
             <tr>
               <td>System and Network Programming</td>
               <td><progress value="90" max="100"></td>
@@ -143,18 +160,13 @@
             </tr>
 
             <tr>
-              <td>Data Base</td>
+              <td>DataBase</td>
               <td><progress value="75" max="100"></td>
             </tr>
 
             <tr>
               <td>Administration and Network</td>
               <td><progress value="70" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>Pack Office</td>
-              <td><progress value="80" max="100"></td>
             </tr>
 
             <tr>
@@ -180,6 +192,11 @@
             <tr>
               <td>Java</td>
               <td><progress value="90" max="100"></td>
+            </tr>
+
+            <tr>
+              <td>C#</td>
+              <td><progress value="85" max="100"></td>
             </tr>
 
             <tr>
@@ -221,156 +238,192 @@
     </div>
 
 <!-- Ligne où les projets sont montrés -->
-    <div class="Cadre_Project">
+    <div id="Realisation" class="w3-container" style="background-color: rgba(0, 0, 0, 0.4)" >
 
-      <div id="Realisation" class="Titre">
-        WORK <!-- Titre de la section -->
+      <div class="title w3-text-orange w3-center" style="padding-top:100px;">
+        Work <!-- Titre de la section -->
       </div>
 
-      <div class="list_title_project">
-        <a class="title_project"  onclick="Go_Slide(1)">Blocus</a>
-        <a class="title_project" onclick="Go_Slide(2)">Website</a>
-        <a class="title_project" onclick="Go_Slide(3)">Candycrush Lite</a>
-        <a class="title_project" onclick="Go_Slide(4)">Portfolio</a>
+      <div class="w3-cell-row w3-xlarge" style="border-bottom: 2px solid orange;">
+        <a class="title_project w3-cell w3-mobile" onclick="Go_Slide(1)">Blocus</a>
+        <a class="title_project w3-cell w3-mobile" onclick="Go_Slide(2)">Website</a>
+        <a class="title_project w3-cell w3-mobile" onclick="Go_Slide(3)">Candycrush Lite</a>
+        <a class="title_project w3-cell w3-mobile" onclick="Go_Slide(4)">Portfolio</a>
       </div>
 
       <div class="list_description_project">
+			
+			<!-- Jeu Blocus -->
+          <div class="description_project w3-container w3-center w3-text-white">
+            <h2 class="sub-title_project w3-text-yellow">The game created in C89 language : Blocus</h2>
 
-          <div class="description_project">
-            <h2>The game created in C89 language : Blocus</h2>
-            <p class="texte"> The game was created during the first semester of my first year of DUT in IT. </p>
-            <h4>Game instuctions</h4>
-            <aside>
-              <video controls muted title="Vidéo de présentation" width="500">
-                <source src="image/page_Realisation/Game.mp4" type="video/mp4">
-              </video>
-            </aside>
-            <p class="texte sobre_video_blocus">
-              After choosing a square grid whose size is between 3 and 9, one after the other, the two players <br>
-              place their pawn and then condemn a square. Then, each player can move his pawn to an adjacent <br>
+            <p class="w3-xlarge"> The game was created during the first semester of my first year of DUT in IT. </p>
+
+            <h4 class="w3-text-yellow">Game instuctions</h4>
+
+            <video controls muted title="Vidéo de présentation" width="500" class="w3-margin">
+               <source src="./image/page_Realisation/Game.mp4" type="video/mp4">
+            </video>
+			  
+            <p class="w3-xlarge">
+              After choosing a square grid whose size is between 3 and 9, one after the other, the two players 
+              place their pawn and then condemn a square. Then, each player can move his pawn to an adjacent 
               square (including diagonally) and again condemn a square. The first player who cannot move his pawn will have lost.
             </p>
-            <p class="texte">Although this was not requested, my comrade and I made graphic additions such as the coloring of the box <br>
-               where the mouse is located, but also the differentiation of the boxes condemned to know which player has blocked which box.</p>
-            <br><br><br><br>
-            <aside>
-              <img id="img_blocus" src="image/page_Realisation/Game.png" alt="Image du jeu en C">
-            </aside>
-            <p class="texte texte2">In addition, to avoid having a BOT that is too random, we have introduced
-               the obligation that the box condemned by the BOT is around the player, which makes the game more complex.
-            </p>
-            <br> <br> <br> <br> <br> <br> <br> <br> <br><br><br><br>
-            <p class="texte texte2">Cooperating with a comrade was the greatest difficulty, which means having a code
-              that is readable and easy to understand. This problem solved, the exercise becomes easier than it
-              seems and above all, enabled me to experience new things learned during the lessons.</p>
-
-            <p class="texte texte2"><a target="_blank" class="link_git" href="https://github.com/Dylan-GIRAULT/Blocus">Code link</a></p>
+            <p class="w3-xlarge">
+				Although this was not requested, my comrade and I made graphic additions such as the coloring of the box 
+				where the mouse is located, but also the differentiation of the boxes condemned to know which player has blocked which box.
+			</p>
+			
+			
+            <img class="w3-margin" src="./image/page_Realisation/Game.png" alt="Image du jeu en C">
+			
+			
+            <p class="w3-xlarge">
+				In addition, to avoid having a BOT that is too random, we have introduced 
+				the obligation that the box condemned by the BOT is around the player, which makes the game more complex.
+			</p>
+			
+            <p class="w3-xlarge">
+				Cooperating with a comrade was the greatest difficulty, which means having a code 
+				that is readable and easy to understand. This problem solved, the exercise becomes easier than it 
+				seems and above all, enabled me to experience new things learned during the lessons.
+			</p>
+			
+			<div class="w3-center w3-xlarge">
+				<a class="w3-round w3-border w3-hover-black w3-button w3-margin" href="https://github.com/Dylan-GIRAULT/Blocus" target="_blank">Code link</a>
+			</div>
 
           </div>
+		  
 
-          <div class="description_project">
-            <h2>The website that come with my TPE on "sleep".</h2>
-            <div class="bloc_img_TPE">
-              <img  id="img_TPE" src="image/page_Realisation/Sommeil.png" alt="Image du site web TPE">
-            </div>
+		  <!-- Site Web TPE -->
+		  
+		  
+          <div class="description_project w3-container w3-center w3-text-white">
+            <h2 class="sub-title_project w3-text-yellow">The website that comes with my TPE on "Sleep".</h2>
+			
+            <img style="max-width:1000px;" class="w3-margin" src="./image/page_Realisation/Sommeil.png" alt="Image du site web TPE">
 
-            <div class="all_text_TPE">
-             <aside class="TPE_aside"> <br>
-              <h4>Learned experience</h4>
 
-              <p class="texte">I learned to organize the information for each page in an orderly and clear way,
-                but also to anticipate future information that might be added and that would impact the whole of a page.</p>
-             </aside>
+            <div>
+              <h4 class="w3-text-yellow">Learned experience</h4>
+
+              <p class="w3-xlarge">
+				I learned to organize the information for each page in an orderly and clear way, 
+                but also to anticipate future information that might be added and that would impact the whole of a page.
+			  </p>
+
 
              <div>
-               <h4>Context</h4>
+               <h4 class="w3-text-yellow">Context</h4>
 
 
-               <p class="texte" id="TPE_texte_right">
-                 We were asked in the eleventh grade for the TPE (supervised personal work) test to add support to present my research. I immediately
-                  thought with my partner to put it in the form of a site in order to make reading pleasant and
-                   easy to access. I used <a target="_blank" href="https://www.wix.com/">WIX</a> to create the site.
+               <p class="w3-xlarge">
+					We were asked in the eleventh grade for the TPE (supervised personal work) test to add support to present my research. I immediately 
+					thought with my partner to put it in the form of a site in order to make reading pleasant and 
+					easy to access. I used <a target="_blank" style="color: #49F4E9" href="https://www.wix.com/">WIX</a> to create the site.
                </p>
              </div>
             </div>
-            <p class="texte texte2"><a class="link_git" href="https://deoxxe.wixsite.com/phytpesvt" target="_blank">See the website ?</a></p>
+			
+			<div class="w3-center w3-xlarge">
+				<a class="w3-round w3-border w3-hover-black w3-button w3-margin" href="https://deoxxe.wixsite.com/phytpesvt" target="_blank">See the website ?</a>
+			</div>
 
           </div>
+		  
+		  
 
           <!-- Jeu Candycrush Lite -->
 
-          <div class="description_project">
-            <h2>The game created in Java langage : Candycrush Lite</h2>
+		  
+		  
+          <div class="description_project w3-container w3-center w3-text-white">
+            <h2 class="sub-title_project w3-text-yellow">The game created in Java langage : Candycrush Lite</h2>
 
-            <p class="texte"> The game was created during the second semester of my first year of DUT in IT. </p>
+            <p class="w3-xlarge"> The game was created during the second semester of my first year of DUT in IT. </p>
 
-            <h4>Game instuctions</h4>
-            <aside>
-              <video controls muted title="Game in java Candycrush Lite : random" width="500">
-                <source src="image/page_Realisation/game_CandycrushLite.mp4" type="video/mp4">
-              </video>
-            </aside>
-            <p class="texte sobre_video_candycrush">
-              In this game, a grid is filled with blocks of three types and the goal is to clear it. A group of <br>
-              adjacent blocks of the same type can be removed by clicking on them. The remaining blocks are rearranged <br>
+            <h4 class="w3-text-yellow">Game instuctions</h4>
+			
+            <video controls muted title="Jeu en java Candycrush Lite : aléatoire" width="500">
+                <source src="./image/page_Realisation/game_CandycrushLite.mp4" type="video/mp4">
+            </video>
+			
+            <p class="w3-large">
+              In this game, a grid is filled with blocks of three types and the goal is to clear it. A group of 
+              adjacent blocks of the same type can be removed by clicking on them. The remaining blocks are rearranged 
               in order to fill the holes and we start again until the grid has been emptied or only isolated blocks are left.
             </p>
-            <br>
-            <br>
-            <h4>Opening the game from a file</h4>
+			
+            <h4 class="w3-text-yellow">Opening the game from a file</h4>
 
-            <p class="texte">The game is able to retrieve a file respecting a certain syntax in order to create the game board. <br>
-              You can see the content of the "test.txt" file opposite, used as an example in the video.</p>
+            <p class="w3-large">
+				The game is able to retrieve a file respecting a certain syntax in order to create the game board. 
+				You can see the content of the "test.txt" file opposite, used as an example in the video.
+			</p>
 
-            <div class="video_img">
-              <video class="video_java" controls muted title="Game in java Candycrush Lite : file" width="500">
-                <source src="image/page_Realisation/File_java.mp4" type="video/mp4">
-              </video>
-              <img src="image/page_Realisation/exemple_file.png">
+            <div class="w3-cell-row w3-container">
+			  <div class="w3-cell">	
+				<video controls muted title="Jeu en java Candycrush Lite : fichier" width="500">
+					<source src="./image/page_Realisation/File_java.mp4" type="video/mp4">
+				</video>
+			  </div>
+				<img class="w3-cell	" src="./image/page_Realisation/exemple_file.png">
             </div>
 
-            <br><br><br><br><br><br>
-            <p class="texte texte2">
-              Allowing files to be imported increases the risk of bugs, especially if the file does not comply <br>
+            <p class="w3-large ">
+              Allowing files to be imported increases the risk of bugs, especially if the file does not comply 
               with the desired syntax. For this reason, the program is able to handle errors and report them to the user.</p>
 
-              <div class="bloc_right">
+              <div>
 
-                <div class="bloc_down">
-                  <img class="img_error" alt="example file not found error message" src="image/page_Realisation/erreur_file.png">
+                <div class="w3-padding">
+                  <img alt="exemple de message d'erreur d'un fichier non trouvé" src="./image/page_Realisation/erreur_file.png">
                   <p>Error message of a file not found</p>
                 </div>
-                <br><br><br>
-                <div class="bloc_down">
-                  <img class="img_error" alt="example of an error message of an unacceptable character" src="image/page_Realisation/erreur_caract.png">
+				
+                <div class="w3-padding">
+                  <img alt="exemple de message d'erreur d'un caractère non accepté" src="./image/page_Realisation/erreur_caract.png">
                   <p>Error message of an unacceptable character (different from "R", "V", "B")</p>
                 </div>
-                <br><br><br>
-                <div class="bloc_down">
-                  <img class="img_error" alt="example of an error message of an illegal size" src="image/page_Realisation/erreur_taille.png">
+
+                <div class="w3-padding">
+                  <img alt="exemple de message d'erreur d'une taille non conforme" src="./image/page_Realisation/erreur_taille.png">
                   <p>Error message of an incorrect size of the array</p>
                 </div>
-                <br><br><br>
+
               </div>
 
             </p>
 
 
-            <p class="texte texte2">This project, because of the use of the java language, requires a much more extensive organization. <br>
-              This forces us to think about how to make our code accessible to his teammates, without causing disagreement between the
-              created class and the user of the code who must be able to use it without having to know its structure.</p>
-
-            <p class="texte texte2"><a target="_blank" class="link_git" href="https://github.com/Dylan-GIRAULT/Candycrush_Lite">Code link</a></p>
+            <p class="w3-margin w3-large">
+				This project, because of the use of the java language, requires a much more extensive organization. 
+				This forces us to think about how to make our code accessible to his teammates, without causing disagreement between the 
+				created class and the user of the code who must be able to use it without having to know its structure.
+			</p>
+			
+			<div class="w3-center w3-xlarge">
+				<a class="w3-round w3-border w3-hover-black w3-button w3-margin" href="https://github.com/Dylan-GIRAULT/Candycrush_Lite" target="_blank">Code link</a>
+			</div>
 
           </div>
+		  
+		  <!-- PORTFOLIO --> 
 
-          <div class="description_project">
-            <h2>A work combining HTML, CSS and JavaScript. : Portfolio</h2>
+          <div class="description_project w3-container w3-center w3-text-white">
+            <h2 class="sub-title_project w3-text-yellow">A work combining HTML, CSS and JavaScript. : Portfolio</h2>
 
-            <p class="texte">The portfolio is in itself the image of my competencies. Displaying my skills and showing my previous <br>
-              achievements in a fluid and pleasant way is the test that the creation of this portfolio brings. To allow easy and pleasant <br>
-              reading, I put myself under the skin of an Internet user consulting this portfolio. This site is also intended to allow color <br>
-              blind people to navigate as easily as any other person.</p>
+            <p class="w3-xlarge"> 
+			  The portfolio is in itself the image of my competencies. Displaying my skills and showing my previous 
+              achievements in a fluid and pleasant way is the test that the creation of this portfolio brings.
+			</p>
+			
+			<p class="w3-xlarge">
+				To allow easy and pleasant reading, I put myself under the skin of an Internet user consulting this portfolio. This site is also intended to allow color 
+				blind people to navigate as easily as any other person.
+			</p>
 
           </div>
 
@@ -380,55 +433,39 @@
 
 
 <!-- Ligne indiquant les zones de contact -->
-    <div class="Cadre_Contact">
+    <div class="Cadre_Contact w3-white">
 
-      <div id="Contacter" class="Titre">
+      <div id="Contacter" class="title w3-center w3-text-black">
         Contact <!-- Titre de la section -->
       </div>
 
-      <div class="list_contact">
-        <div class="list_contact_img">
+      <div class="w3-container">
+        <div class="w3-cell-row">
 
-          <div class="bloc_contact">
-            <img src="image/page_Contact/tel.png" alt="Numéro de téléphone"><br>
+          <div class="w3-cell w3-container w3-center">
+            <i class="fas fa-phone w3-xxlarge w3-text-green"></i>
+			<p>+33 6.51.74.20.83</p>
           </div>
 
-          <div class="bloc_contact">
-            <img class="taille" src="image/page_Contact/mail.png" alt="Adresse Email"><br>
-          </div>
-
-          <div class="bloc_contact">
-            <img class="taille" src="image/page_Contact/linkedin.png" alt="Mon Linkedin"><br>
-          </div>
-
-          <div class="bloc_contact">
-            <img src="image/page_Contact/github.png" alt="Mon gitHub">
-          </div>
-        </div>
-
-        <div class="list_contact_txt">
-
-          <div class="bloc_contact">
-            <p>+33 6.51.74.20.83</p>
-          </div>
-
-          <div class="bloc_contact">
-            <a href="mailto:dylangirault973@gmail.com" target="_blank">
+          <div class="w3-cell w3-container w3-center">
+            <i class="fas fa-at w3-xxlarge w3-text-red"></i>
+			<a href="mailto:dylangirault973@gmail.com" target="_blank">
               <p>dylangirault973@gmail.com</p>
             </a>
           </div>
 
-          <div class="bloc_contact">
-            <a href="https://linkedin.com/in/dylan-girault-a881451b6" target="_blank">
+          <div class="w3-cell w3-container w3-center">
+            <i class="fab fa-linkedin w3-xxlarge w3-text-blue"></i>
+			<a href="https://linkedin.com/in/dylan-girault-a881451b6" target="_blank">
               <p>Linkedin Profile</p>
             </a>
           </div>
 
-          <div class="bloc_contact">
-            <a href="https://github.com/Dylan-GIRAULT" target="_blank">
+          <div class="w3-cell w3-container w3-center">
+            <i class="fab fa-github w3-xxlarge w3-text-purple"></i>
+			<a href="https://github.com/Dylan-GIRAULT" target="_blank">
               <p>GitHub Profile</p>
             </a>
-
           </div>
         </div>
       </div>
@@ -441,17 +478,21 @@
 
     <!-- Bas de page -->
     <footer>
-      <div>© 2020-2021 Dylan GIRAULT <br>
-       Some images come from the sites. :
-       <a target="_blank" class="link" href="https://pixabay.com/fr/">pixabay</a>,
-       <a target="_blank" class="link" href="https://www.linkedin.com/">linkedin</a>,
-      <a href="https://github.com/" class="link">GitHub</a><br>
-       The fonts come from the site :
-       <a target="_blank" class="link" href="https://www.dafont.com/fr/">dafont</a>
+      <div>© 2020-2022 Dylan GIRAULT <br>
+		Some images come from the sites : 
+		<a target="_blank" class="link" href="https://pixabay.com/fr/">pixabay</a>,
+		<a target="_blank" class="link" href="https://www.linkedin.com/">linkedin</a>,
+		<a target="_blank" class="link" href="https://fontawesome.com/">Font Awesome</a>,
+		<a href="https://github.com/" class="link">GitHub</a> <br>
+		The fonts come from the site : 
+		<a target="_blank" class="link" href="https://www.dafont.com/fr/">dafont</a> <br>
+		Use of CSS framework : 
+		<a target="_blank" class="link" href="https://www.w3schools.com/w3css/">w3.css</a>
       </div>
     </footer>
     <!-- Fin de Bas de page -->
-    <script src="fichier_JS/realisation.js"></script>
+    <script src="./fichier_JS/realisation.js"></script>
+	<script src="https://kit.fontawesome.com/e5cacaa7f5.js"></script>
   </body>
 
 

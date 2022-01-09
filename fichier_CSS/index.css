@@ -1,0 +1,117 @@
+@font-face {
+ font-family: "Dancing Script";
+ src: url("../police/Dancing_script/DancingScript-Bold.ttf") format("truetype"),
+      url("../police/Dancing_script/DancingScript-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Potra";
+  src: url("../police/Potra/Potra.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Logoplexi";
+  src: url("../police/Logoplexi/Logoplexi-Regular.otf") format("truetype"),
+       url("../police/Logoplexi/Logoplexi-Regular.ttf") format("truetype");
+}
+
+@keyframes animation { /* Animation qui affiche tout les éléments en une opacité faible pour ensuite la rendre normale */
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+
+body {
+	
+  font-family: Georgia, serif;
+  animation-name: animation;
+  animation-duration: 1.5s;
+  background-image: linear-gradient(rgba(48, 65, 86, 0.8), rgba(48, 65, 86, 0.8)), url("../image/index/background2.png");
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  
+} 
+.nav-title {
+	font-family: "Dancing Script", "Verdana", "Comic Sans MS";
+}
+	
+
+.title {
+	font-family: "Potra";
+	font-size: 400%;
+}
+
+.sub-title {
+	font-size: 250%;
+	font-family: Georgia, serif;
+}
+
+/* Partie CV */
+
+.name_cursus {
+	font-size: 30px;
+	color : #047A1F;
+}
+
+.name_cursus b {
+	font-size: 33px;
+	color: white;
+	background-color: #9C9C9C;
+	border-radius: 5px;
+	border: 3px #9C9C9C solid;
+}
+
+.name_cursus ~ p {
+	color: #5A5959;
+	font-size: 13px;
+}
+
+/* Partie Projet */
+
+.title_project {
+	color: #859ADA;
+	text-align: center;
+}
+
+.title_project:hover {
+  color: #3353B1;
+  cursor: pointer;
+}
+
+.description_project {
+	
+	animation-name: animation;
+	animation-duration: 1.5s;
+}
+
+.visible {
+	color : #3353B1;
+	text-decoration: underline;	
+}
+
+.sub-title_project {
+	font-family: "Logoplexi";
+}
+
+/* footer */
+
+ footer {
+   font-size: 10px;
+  margin: -8px;
+  display: flex;
+  border: 20px black solid;
+  background-color: black;
+  color: grey;
+  justify-content: space-around;
+  font-family: "Verdana", "Comic Sans MS";
+}
+
+.link { /* représente les liens se situant dans le bas de page */
+  text-decoration: none;
+  color: grey;
+}
+
+.link:hover {
+  color : #A6A6A6;
+}
