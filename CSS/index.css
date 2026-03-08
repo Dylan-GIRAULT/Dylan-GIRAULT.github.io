@@ -38,6 +38,14 @@ section {
   border-radius:2px;
 }
 
+.bar-vertical {
+  width:3px;
+  height:20px;
+  background:var(--accent);
+  margin-top:0.25rem;
+  border-radius:2px;
+}
+
 /* ─── NAV ─────────────────────────────────────────────── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
@@ -49,6 +57,10 @@ nav {
   height: 64px;
 }
 .nav-logo { font-family: 'Fira Code', monospace; font-size: 1.1rem; color: var(--accent); font-weight: 600; text-decoration: none; }
+.nav-links-wrap {
+ display: flex;
+ gap: 1rem;
+}
 .nav-links { display: flex; gap: 2rem; list-style: none; }
 .nav-links a { color: var(--text); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color .2s; }
 .nav-links a:hover { color: var(--accent); }
@@ -367,6 +379,6 @@ footer a { color: var(--accent); text-decoration: none; }
   .project-card.reverse { grid-template-columns: 1fr; }
   .project-card.reverse .project-img { order: 0; }
   .project-img { min-height: 180px; max-height: 180px; }
-  .nav-links { display: none; }
+  .nav-links-wrap { display: none; }
   .hamburger { display: flex; }
 }

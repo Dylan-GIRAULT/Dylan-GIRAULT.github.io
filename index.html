@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dylan GIRAULT | Portfolio</title> 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="CSS/index.css" />
 </head>
@@ -17,14 +18,21 @@
 <!-- NAV -->
 <nav>
   <a href="#home" class="nav-logo">&lt;Dylan/&gt;</a>
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#curriculum">Curriculum</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Experiences</a></li>
-    <!-- <li><a href="#project">Projects</a></li> -->
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+  
+  <div class="nav-links-wrap">
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#curriculum">Curriculum</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experiences</a></li>
+      <!-- <li><a href="#project">Projects</a></li> -->
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="bar-vertical"></div>
+    <ul class="nav-links">
+      <li><a href="fr/">Français</a></li>
+    </ul>
+  </div>
   <div class="hamburger" onclick="activateMobileMenu()">
     <span></span><span></span><span></span>
   </div>
@@ -37,6 +45,8 @@
     <li><a href="#experience" onclick="deactivateMobileMenu()">Experience</a></li>
     <!-- <li><a href="#project" onclick="deactivateMobileMenu()">Projects</a></li> -->
     <li><a href="#contact" onclick="deactivateMobileMenu()">Contact</a></li>
+    <li><div style="margin-bottom:0;" class="bar-style"></div></li>
+    <li><a href="fr/" onclick="deactivateMobileMenu()">Français</a></li>
   </ul>
 </div>
 

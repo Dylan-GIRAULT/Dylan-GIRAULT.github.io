@@ -17,14 +17,20 @@
 <!-- NAV -->
 <nav>
   <a href="#home" class="nav-logo">&lt;Dylan/&gt;</a>
-  <ul class="nav-links">
-    <li><a href="#home">Accueil</a></li>
-    <li><a href="#curriculum">Cursus</a></li>
-    <li><a href="#skills">Compétences</a></li>
-    <li><a href="#experience">Expériences</a></li>
-    <!-- <li><a href="#project">Projets</a></li> -->
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+  <div class="nav-links-wrap">
+    <ul class="nav-links">
+      <li><a href="#home">Accueil</a></li>
+      <li><a href="#curriculum">Cursus</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#experience">Expériences</a></li>
+      <!-- <li><a href="#project">Projets</a></li> -->
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="bar-vertical"></div>
+    <ul class="nav-links">
+      <li><a href="../">English</a></li>
+    </ul>
+  </div>
   <div class="hamburger" onclick="activateMobileMenu()">
     <span></span><span></span><span></span>
   </div>
@@ -37,6 +43,8 @@
     <li><a href="#experience" onclick="deactivateMobileMenu()">Expériences</a></li>
     <!-- <li><a href="#project" onclick="deactivateMobileMenu()">Projets</a></li> -->
     <li><a href="#contact" onclick="deactivateMobileMenu()">Contact</a></li>
+    <li><div style="margin-bottom:0;" class="bar-style"></div></li>
+    <li><a href="../" onclick="deactivateMobileMenu()">English</a></li>
   </ul>
 </div>
 
@@ -340,7 +348,7 @@
 
 <!-- CONTACT -->
 <section id="contact">
-  <p class="section-subtitle">Contactons-nous</p>
+  <p class="section-subtitle">Contactez-moi!</p>
   <h2 class="section-title">Contact</h2>
   <div class="bar-style"></div>
   <div class="contact-grid">
