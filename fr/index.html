@@ -1,525 +1,390 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="shortcut icon" href="../image/all_page/cask2.png"> <!-- Logo du site -->
-	<link rel="stylesheet" href="../fichier_CSS/index.css">
-    <meta charset="utf-8">
-    <title>Dylan GIRAULT</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dylan GIRAULT | Portfolio</title> 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/index.css" />
+</head>
+<body>
 
-<!-- Barre de navigation -->
-  <header class="w3-cell-row w3-blue w3-fixed w3-xlarge w3-padding" style="position: fixed; top:0; z-index:5;">
+<div class="grid-bg"></div>
+<div class="glow-orb glow-orb-1"></div>
+<div class="glow-orb glow-orb-2"></div>
 
-        <a href="#home" class="nav-title w3-cell w3-button w3-mobile w3-hover-blue w3-hover-text-black"><i class="fa fa-home"></i> Accueil </a>
-        <a href="#aboutMe" class="nav-title w3-cell w3-button w3-mobile w3-hover-blue w3-hover-text-black"><i class="fa fa-user"></i> A propos de moi </a>
-        <a href="#project" class="nav-title w3-cell w3-button w3-mobile w3-hover-blue w3-hover-text-black"><i class="fa fa-briefcase"></i> Réalisations </a>
-        <a href="#contact" class="nav-title w3-cell w3-button w3-mobile w3-hover-blue w3-hover-text-black"><i class="fa fa-envelope "></i> Contact </a>
-        <a href="../" class="nav-title w3-cell w3-button w3-mobile w3-hover-blue w3-hover-text-black"><i class="fa fa-language"></i> Anglais</a>
+<!-- NAV -->
+<nav>
+  <a href="#home" class="nav-logo">&lt;Dylan/&gt;</a>
+  <ul class="nav-links">
+    <li><a href="#home">Accueil</a></li>
+    <li><a href="#curriculum">Cursus</a></li>
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#experience">Expériences</a></li>
+    <!-- <li><a href="#project">Projets</a></li> -->
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="activateMobileMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#home" onclick="deactivateMobileMenu()">Accueil</a></li>
+    <li><a href="#curriculum" onclick="deactivateMobileMenu()">Cursus</a></li>
+    <li><a href="#skills" onclick="deactivateMobileMenu()">Compétences</a></li>
+    <li><a href="#experience" onclick="deactivateMobileMenu()">Expériences</a></li>
+    <!-- <li><a href="#project" onclick="deactivateMobileMenu()">Projets</a></li> -->
+    <li><a href="#contact" onclick="deactivateMobileMenu()">Contact</a></li>
+  </ul>
+</div>
 
-  </header>
 
-    <!-- Fin de Barre de navigation -->
-
-  <div class="w3-container">
-	<h2 id="home" class="title w3-center w3-text-orange" style="padding-top:100px;">
-		ACCUEIL <!-- Titre de la section -->
-	</h2>
-
-<!-- Ligne de présentation de soi -->
-    
-	<div class="w3-cell-row" style="padding-left: 100px;">
-      <div class="w3-container w3-center w3-cell w3-xlarge w3-mobile w3-text-white">
-		<img class="w3-round" src="../image/index/Head.png" alt="Ma tête">
-		<p class=""> <b>Dylan GIRAULT</b></p>
-		<p class=""><b>19 ans</b></p>
+<!-- INTRO -->
+<section id="home">
+  <div class="intro-inner">
+    <div>
+      <div class="intro-tag"> Disponible pour des opportunités</div>
+      <h1 class="intro-title">Je suis <span>Ingénieur Développeur Logiciel</span></h1>
+      <p class="intro-desc">Bonjour, Je m'appelle <strong>Dylan GIRAULT</strong>.<br>Un développeur logiciel passionné et un fervent adepte des nouvelles technologies.</p>
+      <div class="intro-socials">
+        <a href="https://github.com/Dylan-GIRAULT" target="_blank" class="social-btn" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="white" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/dylan-girault/" target="_blank" class="social-btn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="white" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.79２ ２４　１．７７１　２４ｈ２０．４５１Ｃ２３．２　２４　２４　２３．２２７　２４　２２．２７１Ｖ１．７２９Ｃ２４　０．７７４　２３．２　０　２２．２２２　０ｈ．００３ｚ"/></svg>
+        </a>
       </div>
-
-      <div class="w3-container w3-cell w3-xxlarge w3-mobile">
-        <p class="w3-text-white">Mes passions : <b>l'informatique</b> et acquérir de <b>nouvelles expériences</b>.</p>
-        <p class="w3-text-white">Mon portfolio : Un moyen de vous communiquer <b>mes compétences</b>.</p>
+      <div class="intro-cta">
+        <a href="#contact" class="btn btn-primary">Contactez-moi</a>
+        <!-- TODO: Add download CV link -->
+        <a href="" target="_blank" class="btn btn-outline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Télécharger le CV
+        </a>
       </div>
+    </div>
+    <div class="intro-photo-wrap">
+      <div class="intro-photo-placeholder">
+        <img src="../image/Head.png" alt="Profile"/>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- SCHOOL -->
+  <section id="curriculum">
+  <p class="section-subtitle">Où ai-je étudié</p>
+  <h2 class="section-title">Cursus scolaire</h2>
+  <div class="bar-style"></div>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div class="exp-logo-placeholder">🏢</div>
+          <div>
+            <div><span class="exp-title">Diplôme d'ingénieur</span></div>
+            <div class="exp-company">UTC</div>
+            <div class="exp-meta"><span>📅 2026</span><span>📍Compiègne, France</span></div>
+          </div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Etude en formation d'alternance</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div class="exp-logo-placeholder">🏢</div>
+          <div>
+            <div><span class="exp-title">DUT Informatique</span></div>
+            <div class="exp-company">UPEC</div>
+            <div class="exp-meta"><span>📅 2022</span><span>📍 Fontainebleau, France</span></div>
+          </div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Seconde année en formation d'alternance</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div class="exp-logo-placeholder">🏢</div>
+          <div>
+            <div><span class="exp-title">Baccalauréat Scientifique</span></div>
+            <div class="exp-company">Lycée Pierre Mendès France</div>
+            <div class="exp-meta"><span>📅 2020</span><span>📍 Savigny-le-Temple, France</span></div>
+          </div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Spécialisation mathématique</li>
+        </ul>
+      </div>
     </div>
 
   </div>
+</section>
 
-<!-- Présentation de mes compétences -->
+<!-- SKILLS -->
+<section id="skills">
+  <p class="section-subtitle">J'ai travaillé avec</p>
+  <h2 class="section-title">Compétences techniques</h2>
+  <div class="bar-style"></div>
+  <div class="skills-groups">
+    <div class="skill-group">
+      <p class="skill-group-title">Langages</p>
+      <div class="skill-pills">
+        <span class="skill-pill">C</span>
 
-    <div id="aboutMe" class="w3-container w3-white">
+        <span class="skill-pill">C++</span>
+        <span class="skill-pill">GoLang</span>
+        <span class="skill-pill">Java</span>
+        <span class="skill-pill">C#</span>
+        
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">LaTeX</span>
+        <span class="skill-pill">R</span>
 
-      <div class="title w3-center w3-text-black" style="padding-top:100px;">
-        A propos de moi <!-- Titre de la section -->
+        <span class="skill-pill">HTML/CSS</span>
+        <span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">PHP</span>
+
+        <span class="skill-pill">PLSQL</span>
+        <span class="skill-pill">MySQL</span>
+        <span class="skill-pill">PostgreSQL</span>
       </div>
-
-      <div class="w3-center">
-        <a class="w3-round w3-border w3-hover-black w3-button" href="../image/page_CV/Dylan_GIRAULT_CV.pdf" target="_blank">Voir mon CV</a>
+    </div>
+    <div class="skill-group">
+      <p class="skill-group-title">Frameworks & Bibliothèques</p>
+      <div class="skill-pills">
+        <span class="skill-pill">Spring Boot</span>
+        <span class="skill-pill">React.js</span>
+        <span class="skill-pill">Node.js</span>
+        <span class="skill-pill">Javafx</span>
+        <span class="skill-pill">Qt</span>
       </div>
+    </div>
+    <div class="skill-group">
+      <p class="skill-group-title">Outils & Technologies</p>
+      <div class="skill-pills">
+        <span class="skill-pill">Git</span>
+        <span class="skill-pill">GitHub</span>
+        <span class="skill-pill">AWS</span>
+        <span class="skill-pill">Jenkins</span>
+        <span class="skill-pill">Pack office</span>
+        <span class="skill-pill">Linux</span>
+        <span class="skill-pill">Windows</span>
+        <span class="skill-pill">Ranorex</span>
+        <span class="skill-pill">Jamovi</span>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- EXPERIENCE -->
+<section id="experience">
+  <p class="section-subtitle">Mon parcours</p>
+  <h2 class="section-title">Expériences</h2>
+  <div class="bar-style"></div>
+  <div class="timeline">
 
-      <div class="w3-cell-row">
-        <div class="w3-cell">
-          <h2 class="sub-title w3-padding"><b>Cursus Scolaire</b></h2> <!-- Cursus Scolaire -->
-
-          <div class="w3-container w3-card-4">
-		        <div class="w3-padding">
-              <div class="name_cursus">Diplôme d'ingénieur <b>2025</b> </div>
-              <span>En cours</span>
-              <p>Ecole d'ingénieur UTC de Compiègne</p>
-		        </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div class="exp-logo-placeholder">🏢</div>
+          <div>
+            <div><span class="exp-title">Ingénieur Logiciel</span><span class="exp-type">Alternance</span></div>
+            <div class="exp-company">MBDA</div>
+            <div class="exp-meta"><span>📅 Septembre 2022 - Février 2026</span><span>📍Le-Plessis-Robinson, France</span></div>
           </div>
-          
-          <br>
-
-          <div class="w3-container w3-card-4">
-		        <div class="w3-padding">
-              <div class="name_cursus">DUT Informatique <b>2022</b> </div>
-              <span>Mention bien</span>
-              <p>IUT de Sénart-Fontainebleau site de Fontainebleau</p>
-		        </div>
-          </div>
-		<br>
-          <div class="w3-container w3-card-4">
-            <div class="w3-padding">
-              <div class="name_cursus">Baccalauréat scientifique spécialité mathématique <b>2020</b> </div>
-              <span>Mention assez bien</span>
-              <p>Lycée Pierre Mendès France à Savigny-le-Temple</p>
-            </div>
-          </div>
-
-          <h2 class="sub-title w3-padding"><b>Expérience Professionnelle</b></h2> <!-- Expérience Professionnelle -->
-          
-          <div class="w3-container w3-card-4">
-            <div class="w3-padding w3-mobile">
-              <div class="name_cursus">Ingénieur Logiciel <b>Septembre 2022 - Août 2025</b> </div>
-              <span>Contrat d'alternance</span>
-              <p>Airbus à Elancourt</p>
-            </div>
-          </div>
-          <br>
-          <div class="w3-container w3-card-4">
-		        <div class="w3-padding w3-mobile">
-              <div class="name_cursus">Test Analyst Junior <b>Septembre 2021 - Août 2022</b> </div>
-              <span>Contrat d'alternance</span>
-		        </div>
-		
-		        <div class="w3-padding">
-              <div class="name_cursus"><b>Juillet - Août 2021</b> </div>
-              <span>Contrat durée déterminée</span>
-              <p>Easyvista à Noisy-le-Grand</p>
-		        </div>
-          </div>
-		      <br>
-          <div class="w3-container w3-card-4">
-            <div class="w3-padding">
-              <div class="name_cursus">Traducteur Français <b>Novembre - Décembre 2018</b> </div>
-              <span>Bénévolat</span>
-              <p>Stranga Games en Australie</p>
-            </div>
-          </div>
-          <br>
-          <div class="w3-container w3-card-4">
-            <div class="w3-padding">
-              <div class="name_cursus">Entretien et Restauration <b>23-27 Janvier 2017</b> </div>
-              <span>Stage</span>
-              <p>Ecole Pierre Brossolette à Savigny-le-Temple</p>
-            </div>
-          </div>
-
-          <h2 class="sub-title w3-padding"><b>Logiciel</b></h2>
-
-          <table cellspacing="15">
-
-            <tr>
-              <td>Oracle SQL Developer</td>
-            </tr>
-
-            <tr>
-              <td>Pack Office</td>
-            </tr>
-
-            <tr>
-              <td>Atom</td>
-            </tr>
-
-            <tr>
-              <td>Visual Studio 2019</td>
-            </tr>
-
-            <tr>
-              <td>SQLiteStudio</td>
-            </tr>
-
-            <tr>
-              <td>Sublime Text</td>
-            </tr>
-
-			      <tr>
-              <td>Ranorex</td>
-            </tr>
-
-          </table>
-
         </div>
-
-        <!-- Compétence -->
-        <div class="w3-cell">
-          <h2 class="sub-title w3-padding"><b>Compétence</b></h2>
-          <table cellpadding="10" cellspacing="20" class="w3-large">
-            <tr>
-              <td>Programmation Système et Réseau</td>
-              <td><progress value="90" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>Développement Web</td>
-              <td><progress value="75" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>Base de Données</td>
-              <td><progress value="75" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>Administation et Réseau</td>
-              <td><progress value="70" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>Français (langue maternelle)</td>
-              <td><progress value="100" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>Anglais (B2)</td>
-              <td><progress value="80" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>Espagnol (A2)</td>
-              <td><progress value="50" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>Golang</td>
-              <td><progress value="70" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>C</td>
-              <td><progress value="90" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>C++</td>
-              <td><progress value="80" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>Java</td>
-              <td><progress value="90" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>C#</td>
-              <td><progress value="85" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>HTML5</td>
-              <td><progress value="75" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>CSS3</td>
-              <td><progress value="60" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>Javascript</td>
-              <td><progress value="80" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>PHP</td>
-              <td><progress value="70" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>PL/SQL</td>
-              <td><progress value="70" max="100"></td>
-            </tr>
-
-            <tr>
-              <td>Bash</td>
-              <td><progress value="60" max="100"></td>
-            </tr>
-
-          </table>
-
-        </div>
-
+        <ul class="exp-bullets">
+          <li>Implémentation d'une solution de test adaptable et efficace au sein du département</li>
+          <li>Développement de validation de test unitaire, d'intégration et de systèmes</li>
+          <li>Conception des fonctionnalités en parallèle du support de l'outil</li>
+          <li>Réduction de moitié le temps de développement de test</li>
+        </ul>
       </div>
-
     </div>
 
-<!-- Ligne où les projets sont montrés -->
-    <div id="project" class="w3-container" style="background-color: rgba(0, 0, 0, 0.4)" >
-
-      <div class="title w3-text-orange w3-center" style="padding-top:100px;">
-        Réalisation <!-- Titre de la section -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div class="exp-logo-placeholder">🏢</div>
+          <div>
+            <div><span class="exp-title">Ingénieur en recherche</span><span class="exp-type">Stage</span></div>
+            <div class="exp-company">Université de l'Est de la Finlande</div>
+            <div class="exp-meta"><span>📅 Février 2025 - Mai 2025</span><span>📍Joensuu, Finlande</span></div>
+          </div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Développement d'un plugin en R pour l'outil Jamovi</li>
+          <li>Simplification de l'accès à la méthode d'analyse TNA (Transition Network Analysis)</li>
+          <li><a href="https://www.researchgate.net/publication/397373099_JTNA_A_Desktop_Software_for_Transition_Network_Analysis" target="_blank">Production d'un article accepté par l'ICSLE 2025 et gagnant du meilleur article</a></li>
+          <li>Par l'utilisation du Modèle d'acceptation de la technologie, 92% considèrent que le plugin ajoute un plus value au TNA</li>
+        </ul>
       </div>
+    </div>
 
-      <div class="w3-cell-row w3-xlarge" style="border-bottom: 2px solid orange;">
-        <a class="title_project w3-cell w3-mobile" onclick="Go_Slide(1)">Blocus</a>
-        <a class="title_project w3-cell w3-mobile" onclick="Go_Slide(2)">Site web</a>
-        <a class="title_project w3-cell w3-mobile" onclick="Go_Slide(3)">Candycrush Lite</a>
-        <a class="title_project w3-cell w3-mobile" onclick="Go_Slide(4)">Portfolio</a>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div class="exp-logo-placeholder">🏢</div>
+          <div>
+            <div><span class="exp-title">Test Analyst</span><span class="exp-type">Alternance</span></div>
+            <div class="exp-company">EasyVista</div>
+            <div class="exp-meta"><span>📅 Septembre 2021 – Août 2022</span><span>📍 Noisy-le-Grand, France</span></div>
+          </div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Implémentation de validation automatique d'un siteweb, en utilisant Ranorex et C#</li>
+          <li>Contribution à l'intégration continue à travers la détection prématuré d'erreurs</li>
+        </ul>
       </div>
+    </div>
 
-      <div class="list_description_project">
-			
-			<!-- Jeu Blocus -->
-          <div class="description_project w3-container w3-center w3-text-white">
-            <h2 class="sub-title_project w3-text-yellow">Le jeu créé en langage C89 : Blocus</h2>
-
-            <p class="w3-xlarge"> Le jeu a été créé durant le premier semestre de ma première année de DUT informatique. </p>
-
-            <h4 class="w3-text-yellow">Consigne du Jeu</h4>
-
-            <video controls muted title="Vidéo de présentation" width="500" class="w3-margin">
-               <source src="../image/page_Realisation/Game.mp4" type="video/mp4">
-            </video>
-			  
-            <p class="w3-xlarge">
-              Après avoir choisi une grille carré dont la taille est entre 3 et 9, l'un après l'autre, les deux joueurs 
-               posent leur pion puis condamne une case. Ensuite, chaque joueur pourra déplacer son pion vers 
-               une case adjacente (y compris en diagonale) et de nouveau condamnera une case. Le premier joueur qui 
-               ne pourra pas déplacer son pion aura perdu.
-            </p>
-            <p class="w3-xlarge">Bien que cela ne soit pas demandé, mon camarade et moi nous sommes permis de faire des ajouts graphiques 
-            comme la coloration de la case où se situe la souris, mais également la différenciation des cases condamnée 
-            pour savoir quel joueur a bloqué quelle case.</p>
-			
-			
-            <img class="w3-margin" src="../image/page_Realisation/Game.png" alt="Image du jeu en C">
-			
-			
-            <p class="w3-xlarge">De plus, pour éviter d'avoir un BOT trop aléatoire, nous avons instauré l'obligation que la case condamnée par le BOT soit autour
-            du joueur, ce qui permet de complexifier le jeu.</p>
-			
-            <p class="w3-xlarge">Coopérer avec un camarade fut la plus grande difficulté ce qui
-            oblige à avoir un code lisible et simple à comprendre. Ce problème résolu, l'exercice devient beaucoup
-            plus simple qu'il n'y paraît et surtout, m'a permis d'expérimenter de nouvelles choses apprises durant les cours. </p>
-			
-			<div class="w3-center w3-xlarge">
-				<a class="w3-round w3-border w3-hover-black w3-button w3-margin" href="https://github.com/Dylan-GIRAULT/Blocus" target="_blank">Lien du code</a>
-			</div>
-
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div class="exp-logo-placeholder">🏢</div>
+          <div>
+            <div><span class="exp-title">Traducteur Français</span><span class="exp-type">Bénévolat</span></div>
+            <div class="exp-company">Stranga Games</div>
+            <div class="exp-meta"><span>📅 Novembre 2018 – Décembre 2018</span><span>📍 Télétravail</span></div>
           </div>
-		  
+        </div>
+        <ul class="exp-bullets">
+          <li>Traduction de texte anglais vers la langue française</li>
+        </ul>
+      </div>
+    </div>
 
-		  <!-- Site Web TPE -->
-		  
-		  
-          <div class="description_project w3-container w3-center w3-text-white">
-            <h2 class="sub-title_project w3-text-yellow">Le site web qui a accompagné mon TPE sur le Sommeil</h2>
-			
-            <img style="max-width:1000px;" class="w3-margin" src="../image/page_Realisation/Sommeil.png" alt="Image du site web TPE">
+  </div>
+</section>
 
+<!-- PROJECTS -->
+<!-- <section id="project">
+  <p class="section-subtitle">Things I've built</p>
+  <h2 class="section-title">Projects</h2>
+  <div class="bar-style"></div>
 
-            <div>
-              <h4 class="w3-text-yellow">Expérience apprise</h4>
+  <div class="projects-grid">
 
-              <p class="w3-xlarge">
-				J'ai appris à organiser les informations pour chaque
-				page de façon ordonnée et claire, mais également à anticiper les futures
-				informations qui pourraient être ajoutées et qui impacteraient l'ensemble d'une page.
-			  </p>
+    <div class="project-card">
+      <div class="project-body">
+        <p class="project-num">01.</p>
+        <h3 class="project-name">In imperdiet sollicitudin le</h3>
+        <ul class="project-bullets">
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet sollicitudin lectus quis tempus</li>
+          <li>Fusce vel feugiat nunc. Quisque nibh mi, convallis nec mattis et, facilisis eu magna. Nulla vel mollis eros. In non lobortis eros, ac feugiat leo</li>
+          <li>Pellentesque efficitur viverra vulputate</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">Lorem.js</span>
+          <span class="tech-tag">Lorem.js</span>
+          <span class="tech-tag">Ipsum</span>
+          <span class="tech-tag">Ipsum.io</span>
+          <span class="tech-tag">Ipsum</span>
+          <span class="tech-tag">Lorem</span>
+        </div>
+        <div class="project-links">
+          <a href="#" target="_blank" class="project-link code">Source Code</a>
+        </div>
+      </div>
+      <div class="project-img">
+        <div class="project-img-ph">🎥</div>
+      </div>
+    </div>
 
-
-             <div>
-               <h4 class="w3-text-yellow">Contexte</h4>
-
-
-               <p class="w3-xlarge">
-                 Il nous a été demandé en 1ère pour l'épreuve de TPE d'ajouter un
-                 support pour présenter mes recherches. J'ai de suite pensé avec mon partenaire
-                 à le mettre sous forme de site afin de rendre la lecture agréable et facile d'accès. <br>
-                 Je me suis aidé de <a target="_blank" style="color: #49F4E9" href="https://www.wix.com/">WIX</a> pour créer ce site.
-               </p>
-             </div>
-            </div>
-			
-			<div class="w3-center w3-xlarge">
-				<a class="w3-round w3-border w3-hover-black w3-button w3-margin" href="https://deoxxe.wixsite.com/phytpesvt" target="_blank">Voir le site ?</a>
-			</div>
-
-          </div>
-		  
-		  
-
-          <!-- Jeu Candycrush Lite -->
-
-		  
-		  
-          <div class="description_project w3-container w3-center w3-text-white">
-            <h2 class="sub-title_project w3-text-yellow">Le jeu crée en langage Java : Candycrush Lite</h2>
-
-            <p class="w3-xlarge"> Le jeu a été créé durant le second semestre de ma première année de DUT informatique. </p>
-
-            <h4 class="w3-text-yellow">Consigne du Jeu</h4>
-			
-            <video controls muted title="Jeu en java Candycrush Lite : aléatoire" width="500">
-                <source src="../image/page_Realisation/game_CandycrushLite.mp4" type="video/mp4">
-            </video>
-			
-            <p class="w3-large">
-              Dans ce jeu, une grille est remplie de blocs de trois types et le but est de la vider. Un groupe de blocs adjacents et 
-               de même type peut être retiré en cliquant dessus. Les blocs restants se réarrangent afin de boucher les trous et on recommence 
-               jusqu'à avoir vidé la grille ou n'avoir plus que des blocs isolés.
-            </p>
-			
-            <h4 class="w3-text-yellow">Ouverture du jeu à partir d'un fichier</h4>
-
-            <p class="w3-large">
-				Le jeu est capable de récupérer un fichier respectant une certaine syntaxe afin de créer le plateau de jeu. 
-				Vous pouvez voir ci-contre le contenu du fichier "test.txt" utilisé comme exemple dans la vidéo.
-			</p>
-
-            <div class="w3-cell-row w3-container">
-			  <div class="w3-cell">	
-				<video controls muted title="Jeu en java Candycrush Lite : fichier" width="500">
-					<source src="../image/page_Realisation/File_java.mp4" type="video/mp4">
-				</video>
-			  </div>
-				<img class="w3-cell	" src="../image/page_Realisation/exemple_file.png">
-            </div>
-
-            <p class="w3-large ">
-              Permettre d'importer des fichiers augmente les risques de bug surtout si le fichier ne respecte pas la syntaxe voulu. 
-              Pour cette raison, le programme est capable de gérer les erreurs et de les indiquer à l'utilisateur.</p>
-
-              <div>
-
-                <div class="w3-padding">
-                  <img alt="exemple de message d'erreur d'un fichier non trouvé" src="../image/page_Realisation/erreur_file.png">
-                  <p>Message d'erreur d'un fichier non trouvé</p>
-                </div>
-				
-                <div class="w3-padding">
-                  <img alt="exemple de message d'erreur d'un caractère non accepté" src="../image/page_Realisation/erreur_caract.png">
-                  <p>Message d'erreur d'un caractère non accepté (différent de "R", "V", "B")</p>
-                </div>
-
-                <div class="w3-padding">
-                  <img alt="exemple de message d'erreur d'une taille non conforme" src="../image/page_Realisation/erreur_taille.png">
-                  <p>Message d'erreur d'une taille non conforme du tableau</p>
-                </div>
-
-              </div>
-
-            </p>
-
-
-            <p class="w3-margin w3-large">
-				Ce projet, en raison de l'utilisation du langage java, demande une organisation bien plus poussé.
-				Cela force à réfléchir à comment rendre accessible notre code à ses coéquipiers, sans que cela provoque de désaccord entre
-                la classe créé et l'utilisateur du code qui doit pouvoir l'utiliser sans nécessité de connaître sa structure.
-			</p>
-			
-			<div class="w3-center w3-xlarge">
-				<a class="w3-round w3-border w3-hover-black w3-button w3-margin" href="https://github.com/Dylan-GIRAULT/Candycrush_Lite" target="_blank">Lien du code</a>
-			</div>
-
-          </div>
-		  
-		  <!-- PORTFOLIO --> 
-
-          <div class="description_project w3-container w3-center w3-text-white">
-            <h2 class="sub-title_project w3-text-yellow">Un travail regroupant HTML, CSS et JavaScript : le Portfolio</h2>
-
-            <p class="w3-xlarge"> Le portfolio est à lui seul l'image de mes compétences. Former un CV à l'origine en pdf, former un moyen de <br>
-               contact et montrer ses précédentes réalisations de façon fluide et agréable est l'épreuve qu'a demandé <br>
-               la création de ce portfolio. 
-			</p>
-			
-			<p class="w3-xlarge">
-			   Pour permettre une lecture facile et agréable, je me suis mis sous la peau  <br>
-               d'un internaute consultant ce portfolio. Ce site est également prévu pour permettre aux daltoniens de naviguer aussi facilement que n'importe quelle personne.
-			</p>
-
-          </div>
-
+    <div class="project-card reverse">
+      <div class="project-img">
+        <div class="project-img-ph">🎮</div>
+      </div>
+      <div class="project-body">
+        <p class="project-num">02.</p>
+        <h3 class="project-name">is nec mattis et</h3>
+        <ul class="project-bullets">
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet sollicitudin lectus quis tempus</li>
+          <li>Fusce vel feugiat nunc. Quisque nibh mi, convallis nec mattis et, facilisis eu magna. Nulla vel mollis eros. In non lobortis eros, ac feugiat leo</li>
+          <li>Pellentesque efficitur viverra vulputate</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">Lorem.js</span>
+          <span class="tech-tag">Lorem.js</span>
+          <span class="tech-tag">Ipsum</span>
+          <span class="tech-tag">Ipsum.io</span>
+          <span class="tech-tag">Ipsum</span>
+          <span class="tech-tag">Lorem</span>
+        </div>
+        <div class="project-links">
+          <a href="#" target="_blank" class="project-link code">Source Code</a>
         </div>
       </div>
     </div>
 
+  </div>
+</section> -->
 
-<!-- Ligne indiquant les zones de contact -->
-    <div class="Cadre_Contact w3-white">
-
-      <div id="contact" class="title w3-center w3-text-black">
-        Contact <!-- Titre de la section -->
-      </div>
-
-      <div class="w3-container">
-        <div class="w3-cell-row">
-
-          <div class="w3-cell w3-container w3-center">
-            <i class="fas fa-phone w3-xxlarge w3-text-green"></i>
-			<p>+33 6.51.74.20.83</p>
-          </div>
-
-          <div class="w3-cell w3-container w3-center">
-            <i class="fas fa-at w3-xxlarge w3-text-red"></i>
-			<a href="mailto:dylangirault973@gmail.com" target="_blank">
-              <p>dylangirault973@gmail.com</p>
-            </a>
-          </div>
-
-          <div class="w3-cell w3-container w3-center">
-            <i class="fab fa-linkedin w3-xxlarge w3-text-blue"></i>
-			<a href="https://linkedin.com/in/dylan-girault-a881451b6" target="_blank">
-              <p>Mon Profil Linkedin</p>
-            </a>
-          </div>
-
-          <div class="w3-cell w3-container w3-center">
-            <i class="fab fa-github w3-xxlarge w3-text-purple"></i>
-			<a href="https://github.com/Dylan-GIRAULT" target="_blank">
-              <p>Mon Profil GitHub</p>
-            </a>
-          </div>
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-subtitle">Contactons-nous</p>
+  <h2 class="section-title">Contact</h2>
+  <div class="bar-style"></div>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3>Je suis actuellement à la recherche de nouvelles opportunités</h3>
+      <p>Que vous ayez une question ou que vous souhaitiez simplement discuter, je ferai de mon mieux pour vous répondre !</p>
+    </div>
+    <div>
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div class="contact-text">
+          <div class="contact-text-text">Envoyez-moi un mail à</div>
+          <a href="mailto:dylangirault973@gmail.com">dylangirault973@gmail.com</a>
         </div>
       </div>
-
-     </div>
-
-
-
-
-
-    <!-- Bas de page -->
-    <footer>
-      <div>© 2020-2022 Dylan GIRAULT <br>
-		Certaines images proviennent des sites :
-		<a target="_blank" class="link" href="https://pixabay.com/fr/">pixabay</a>,
-		<a target="_blank" class="link" href="https://www.linkedin.com/">linkedin</a>,
-		<a target="_blank" class="link" href="https://fontawesome.com/">Font Awesome</a>,
-		<a href="https://github.com/" class="link">GitHub</a> <br>
-		Les polices d'écriture proviennent du site :
-		<a target="_blank" class="link" href="https://www.dafont.com/fr/">dafont</a> <br>
-		Utilisation de framework CSS : 
-		<a target="_blank" class="link" href="https://www.w3schools.com/w3css/">w3.css</a>
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.64a16 16 0 0 0 6 6l1.5-1.5a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div class="contact-text">
+          <div class="contact-text-text">Appelez-moi au</div>
+          <a href="tel:+33651742083">+33 6 51 74 20 83</a>
+        </div>
       </div>
-    </footer>
-    <!-- Fin de Bas de page -->
-    <script src="../fichier_JS/realisation.js"></script>
-	<script src="https://kit.fontawesome.com/e5cacaa7f5.js"></script>
-  </body>
+    </div>
+    <!-- <div>
+      <h3 class="contact-form-title">Send me a message</h3>
+      <form action="handleSend()" id="contact-form">
+        <input id="email" class="form-input" type="email" placeholder="Your email" />
+        <input id="subject" class="form-input" type="text" placeholder="Subject" />
+        <textarea id="message" class="form-textarea" placeholder="Your message"></textarea>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+    </div> -->
+  </div>
+</section>
 
+<footer>
+  <p>© 2026 <a href="#home">Dylan GIRAULT</a>. Tous droits réservés.</p>
+</footer>
 
+<script src="../JS/index.js"></script>
+
+</body>
 </html>
