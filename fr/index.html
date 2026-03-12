@@ -23,6 +23,7 @@
       <li><a href="#curriculum">Cursus</a></li>
       <li><a href="#skills">Compétences</a></li>
       <li><a href="#experience">Expériences</a></li>
+      <li><a href="#project">Projets</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="bar-vertical"></div>
@@ -40,6 +41,7 @@
     <li><a href="#curriculum" onclick="deactivateMobileMenu()">Cursus</a></li>
     <li><a href="#skills" onclick="deactivateMobileMenu()">Compétences</a></li>
     <li><a href="#experience" onclick="deactivateMobileMenu()">Expériences</a></li>
+    <li><a href="#project" onclick="deactivateMobileMenu()">Projets</a></li>
     <li><a href="#contact" onclick="deactivateMobileMenu()">Contact</a></li>
     <li><div style="margin-bottom:0;" class="bar-style"></div></li>
     <li><a href="../" onclick="deactivateMobileMenu()">English</a></li>
@@ -185,6 +187,9 @@
         <span class="skill-pill">GitHub</span>
         <span class="skill-pill">AWS</span>
         <span class="skill-pill">Jenkins</span>
+        <span class="skill-pill">Visual Studio</span>
+        <span class="skill-pill">Visual Studio Code</span>
+        <span class="skill-pill">Eclipse IDE</span>
         <span class="skill-pill">Pack office</span>
         <span class="skill-pill">Linux</span>
         <span class="skill-pill">Windows</span>
@@ -237,7 +242,7 @@
           <li>Développement d'un plugin en R pour l'outil Jamovi</li>
           <li>Simplification de l'accès à la méthode d'analyse TNA (Transition Network Analysis)</li>
           <li><a href="https://www.researchgate.net/publication/397373099_JTNA_A_Desktop_Software_for_Transition_Network_Analysis" target="_blank">Production d'un article accepté par l'ICSLE 2025 et gagnant du meilleur article</a></li>
-          <li>Par l'utilisation du Modèle d'acceptation de la technologie, 92% considèrent que le plugin ajoute un plus value au TNA</li>
+          <li>Par l'utilisation du Modèle d'acceptation de la technologie, 92% considèrent que le plugin ajoute une plus-value au TNA</li>
         </ul>
       </div>
     </div>
@@ -255,7 +260,7 @@
         </div>
         <ul class="exp-bullets">
           <li>Implémentation de validation automatique d'un site web, en utilisant Ranorex et C#</li>
-          <li>Contribution à l'intégration continue au travers de la détection prématuré d'erreurs</li>
+          <li>Contribution à l'intégration continue au travers de la détection prématurée d'erreurs</li>
         </ul>
       </div>
     </div>
@@ -274,6 +279,90 @@
         <ul class="exp-bullets">
           <li>Traduction de texte anglais vers la langue française</li>
         </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="project">
+  <p class="section-subtitle">Mes contributions</p>
+  <h2 class="section-title">Projets</h2>
+  <div class="bar-style"></div>
+
+  <div class="projects-grid">
+
+    <div class="project-card-column">
+      <div class="project-body">
+        <p class="project-num">01.</p>
+        <h3 class="project-name">Conquête Spatiale</h3>
+        <ul class="project-bullets">
+          <li>Développement d'une simulation multi-agents de conquête spatiale en Go (backend) et React.js/TypeScript (frontend), où des pays-agents s'affrontent pour coloniser les planètes du système solaire en gérant budget, stratégies et alliances</li>
+          <li>Chaque agent s'exécute dans sa propre goroutine et communique via un modèle de message-passing pour négocier des alliances</li>
+          <li>Le projet intègre un système de stratégies combinables sur quatre axes (observation, préparation au lancement, réaction et alliances)</li>
+          <li>Visualisation 3D interactive du système solaire via ReactThreeFiber, permettant de suivre en temps réel l'évolution de la simulation et de comparer les comportements agents dans un environnement non déterministe</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">React.js</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Yarn</span>
+          <span class="tech-tag">Go</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Dylan-GIRAULT/spatial" target="_blank" class="project-link code">Code Source</a>
+        </div>
+      </div>
+      <div class="project-img">
+        <img class="project-img-ph" src="../image/project/spatial.png" alt="Conquête Spatiale"/>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-body">
+        <p class="project-num">02.</p>
+        <h3 class="project-name">Chaud et Froid</h3>
+        <ul class="project-bullets">
+          <li>Application Android développée en Java permettant de localiser une balise iBeacon en intérieur à la manière d'un jeu "chaud ou froid"</li>
+          <li>Le projet utilise le Bluetooth Low Energy, l'analyse du RSSI et des calculs de triangulation pour estimer la distance et la direction de la balise</li>
+          <li>Une interface mobile affiche une flèche d'orientation et des indicateurs visuels (couleurs, distance) pour guider l'utilisateur vers la cible</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">AndroidStudio</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Dylan-GIRAULT/ChaudEtFroid" target="_blank" class="project-link code">Code Source</a>
+        </div>
+      </div>
+      <div class="project-img">
+        <img class="project-img-ph" src="../image/project/HotAndCold.png" alt="Chaud et Froid"/>
+      </div>
+    </div>
+
+
+    <div class="project-card reverse">
+      <div class="project-img">
+        <img class="project-img-ph" src="../image/project/brickBreaker.jpg" alt="Brick Breaker Assembly"/>
+      </div>
+      <div class="project-body">
+        <p class="project-num">03.</p>
+        <h3 class="project-name">Brick Breaker Assembly</h3>
+        <ul class="project-bullets">
+          <li>Conception d'un mini-jeu "Casse brique" vintage en C avec interface GTK3, reposant sur un rendu graphique pixel par pixel pour simuler le déplacement et les rebonds d'une balle dans une fenêtre</li> 
+          <li>Mise en œuvre d'une architecture hybride C / assembleur x86-64 (syntaxe Intel) afin de comparer une implémentation haut niveau et une approche bas niveau sur une même logique de jeu</li> 
+          <li>Développement de compétences en programmation système : gestion mémoire, manipulation de buffers d'image 32 bits, structures de données, compilation et automatisation avec GCC/Makefile</li> 
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">Assembly x86-64</span>
+          <span class="tech-tag">C</span>
+          <span class="tech-tag">GTK3</span>
+          <span class="tech-tag">GCC</span>
+          <span class="tech-tag">Eclipse IDE</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Dylan-GIRAULT/Brick-Breaker-Assembly" target="_blank" class="project-link code">Code Source</a>
+        </div>
       </div>
     </div>
 

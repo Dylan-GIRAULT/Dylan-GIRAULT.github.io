@@ -25,6 +25,7 @@
       <li><a href="#curriculum">Curriculum</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experiences</a></li>
+      <li><a href="#project">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="bar-vertical"></div>
@@ -42,6 +43,7 @@
     <li><a href="#curriculum" onclick="deactivateMobileMenu()">Curriculum</a></li>
     <li><a href="#skills" onclick="deactivateMobileMenu()">Skills</a></li>
     <li><a href="#experience" onclick="deactivateMobileMenu()">Experience</a></li>
+    <li><a href="#project" onclick="deactivateMobileMenu()">Projects</a></li>
     <li><a href="#contact" onclick="deactivateMobileMenu()">Contact</a></li>
     <li><div style="margin-bottom:0;" class="bar-style"></div></li>
     <li><a href="fr/" onclick="deactivateMobileMenu()">Français</a></li>
@@ -276,6 +278,90 @@
         <ul class="exp-bullets">
           <li>Translation of English texts into French</li>
         </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+ <section id="project">
+  <p class="section-subtitle">Things I've built</p>
+  <h2 class="section-title">¨Projects</h2>
+  <div class="bar-style"></div>
+
+  <div class="projects-grid">
+
+    <div class="project-card-column">
+      <div class="project-body">
+        <p class="project-num">01.</p>
+        <h3 class="project-name">Space Conquest</h3>
+        <ul class="project-bullets">
+          <li>Development of a multi-agent simulation of space conquest in Go (backend) and React.js/TypeScript (frontend), where agent-countries compete to colonize the planets of the solar system by managing budget, strategies and alliances</li>
+          <li>Each agent runs in its own goroutine and communicates via a message-passing model to negotiate alliances</li>
+          <li>The project integrates a combinable strategy system across four axes (observation, preparation for launch, response and alliances)</li>
+          <li>Interactive 3D visualization of the solar system via ReactThreeFiber, allowing real-time tracking of the simulation's evolution and comparison of agent behaviors in a non-deterministic environment</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">React.js</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Yarn</span>
+          <span class="tech-tag">Go</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Dylan-GIRAULT/spatial" target="_blank" class="project-link code">Source Code</a>
+        </div>
+      </div>
+      <div class="project-img">
+        <img class="project-img-ph" src="image/project/spatial.png" alt="Space Conquest"/>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-body">
+        <p class="project-num">02.</p>
+        <h3 class="project-name">Hot and Cold</h3>
+        <ul class="project-bullets">
+          <li>Android application developed in Java allowing you to locate an iBeacon indoor beacon like a "hot or cold" game</li>
+          <li>The project uses Bluetooth Low Energy, RSSI analysis and triangulation calculations to estimate the distance and direction of the beacon</li>
+          <li>A mobile interface displays an orientation arrow and visual indicators (colors, distance) to guide the user towards the target</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">AndroidStudio</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Dylan-GIRAULT/ChaudEtFroid" target="_blank" class="project-link code">Source Code</a>
+        </div>
+      </div>
+      <div class="project-img">
+        <img class="project-img-ph" src="image/project/HotAndCold.png" alt="Hot and Cold"/>
+      </div>
+    </div>
+
+
+    <div class="project-card reverse">
+      <div class="project-img">
+        <img class="project-img-ph" src="image/project/brickBreaker.jpg" alt="Brick Breaker Assembly"/>
+      </div>
+      <div class="project-body">
+        <p class="project-num">03.</p>
+        <h3 class="project-name">Brick Breaker Assembly</h3>
+        <ul class="project-bullets">
+          <li>Design of a vintage "Brick Break" mini-game in C with GTK3 interface, based on pixel-by-pixel graphics rendering to simulate the movement and bounces of a ball in a window</li> 
+          <li>Implementation of a hybrid architecture in C / x86-64 assembly (Intel syntax) to compare a high-level implementation with a low-level approach on the same game logic</li> 
+          <li>Development of system programming skills: memory management, manipulation of 32-bit image buffers, data structures, compilation and automation with GCC/Makefile</li> 
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">Assembly x86-64</span>
+          <span class="tech-tag">C</span>
+          <span class="tech-tag">GTK3</span>
+          <span class="tech-tag">GCC</span>
+          <span class="tech-tag">Eclipse IDE</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Dylan-GIRAULT/Brick-Breaker-Assembly" target="_blank" class="project-link code">Source Code</a>
+        </div>
       </div>
     </div>
 
